@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { graphql } from "gatsby";
-require("core-js/fn/array/find");
+import "core-js/fn/array/find";
 
 import Article from "../components/Article";
 import Search from "../components/Search";

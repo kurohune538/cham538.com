@@ -1,4 +1,4 @@
-//const webpack = require("webpack");
+// const webpack = require("webpack");
 const _ = require("lodash");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const path = require("path");
@@ -142,7 +142,7 @@ exports.createPages = ({ graphql, actions }) => {
   });
 };
 
-exports.onCreateWebpackConfig = ({ stage, actions }, options) => {
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   switch (stage) {
     case `build-javascript`:
       actions.setWebpackConfig({
@@ -155,6 +155,18 @@ exports.onCreateWebpackConfig = ({ stage, actions }, options) => {
             defaultSizes: "gzip"
           })
         ]
+      });
+      break;
+    case `build-html`:
+      actions.setWebpackConfig({
+        module: {
+          rules: [
+            {
+              test: /bad-module/,
+              use: loaders.null()
+            }
+          ]
+        }
       });
   }
 };
