@@ -12,7 +12,7 @@ module.exports = {
   authorTwitterAccount: "kurohune538",
 
   /* info */
-  headerTitle: "ヤミコ(Yamiko)",
+  headerTitle: "Yamiko - ヤミコの休息",
   headerSubTitle: "White Mage Yamiko",
 
   /* manifest.json */
@@ -28,7 +28,7 @@ module.exports = {
   // Replace your email adress with md5-code.
   // Example https://www.gravatar.com/avatar/g.strainovic@gmail.com ->
   // gravatarImgMd5: "https://www.gravatar.com/avatar/1db853e4df386e8f699e4b35505dd8c6",
-  gravatarImgMd5: "",
+  gravatarImgMd5: "https://secure.gravatar.com/avatar/c20ab06def8ab64ca18e6bc5892af348",
 
   // social
   authorSocialLinks: [
