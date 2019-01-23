@@ -1,3 +1,10 @@
+# Errors
+
+## sharp のインストールにコケたら
+
+- Python のバージョンを system に切り替える
+  `pyenv shell system`
+
 # HeroBlog
 
 A [GatsbyJS](https://www.gatsbyjs.org/) blog starter. <br /><br />
