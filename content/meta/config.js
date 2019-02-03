@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: "White Mage Yamiko", // <title>
+  siteTitle: "Yamiko - ヤミコの休息", // <title>
   shortSiteTitle: "White Mage Yamiko", // <title> ending for posts and pages
   siteDescription: "Yamiko's works and blog.",
   siteUrl: "https://cham538.com",

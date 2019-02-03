@@ -165,7 +165,7 @@ class Header extends React.Component {
                 color: ${theme.color.neutral.white};
               }
               h2 {
-                color: ${theme.color.neutral.gray.d};
+                color: ${theme.color.neutral.white};
               }
             }
           }
@@ -206,7 +206,7 @@ class Header extends React.Component {
                   color: ${theme.color.neutral.white};
                 }
                 h2 {
-                  color: ${theme.color.neutral.gray.d};
+                  color: ${theme.color.neutral.white};
                 }
               }
             }
