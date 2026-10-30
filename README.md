@@ -32,7 +32,7 @@ python3 -m http.server 8087 --directory dist
 | `scripts/validate_site.py` | HTML・CSSのローカル参照とサイトマップを検証 |
 | `wrangler.jsonc` | 公開Workerと静的ファイル配信の設定 |
 
-READ BETWEEN YOUを更新するときは、`content/read-between-you.html`、`content/read-between-you-card.html`、`static/read-between-you.css`を編集してビルドします。Epitaph of the Earthは`content/epitaph-of-the-earth.html`、`content/epitaph-of-the-earth-card.html`、`static/epitaph-of-the-earth.css`と`static/epitaph-*.jpg`で管理します。Cascadeは`content/cascade.html`、`content/cascade-card.html`、`static/cascade.css`と`static/cascade-waterfall-prototype.png`で管理します。新しい作品を追加するときは、原稿・画像に加えてビルド処理とサイトマップへの登録も追加します。
+READ BETWEEN YOUを更新するときは、`content/read-between-you.html`、`content/read-between-you-card.html`、`static/read-between-you.css`を編集してビルドします。Epitaph of the Earthは`content/epitaph-of-the-earth.html`、`content/epitaph-of-the-earth-card.html`、`static/epitaph-of-the-earth.css`と`static/epitaph-*.jpg`で管理します。Cascadeは`content/cascade.html`、`content/cascade-card.html`、`static/cascade.css`と`static/cascade-key-visual.jpg`で管理します。新しい作品を追加するときは、原稿・画像に加えてビルド処理とサイトマップへの登録も追加します。
 
 ビルド時に生成する素材対応や移行元HTMLの調査結果は`.local/audit/`に置き、Gitには含めません。旧移行作業の管理画面記録、認証情報、`.wrangler/`、生成済みの`dist/`も管理対象から除いています。
 
