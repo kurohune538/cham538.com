@@ -1,143 +1,65 @@
-# Errors
+# cham538.com
 
-## sharp のインストールにコケたら
+[cham538.com](https://www.cham538.com/) の現在のソースコードです。Webflowから移行した静的サイトを、Cloudflare Workers Static Assets（`cham538-static`）で配信しています。
 
-- Python のバージョンを system に切り替える
-  `pyenv shell system`
+このリポジトリの `master` を編集元として使います。以前のGatsby版はGitの履歴に残っています。サイト本文・画像・ビルドスクリプトをすべて含むため、ビルド時にWebflowから素材を取得する必要はありません。
 
-# HeroBlog
+## 取得・ビルド
 
-A [GatsbyJS](https://www.gatsbyjs.org/) blog starter. <br /><br />
+Python 3.10以上が必要です。Pythonの追加パッケージやAPIキーは不要です。
 
-[![GitHub tag](https://img.shields.io/github/tag/greglobinski/gatsby-starter-hero-blog.svg)](https://github.com/greglobinski/gatsby-starter-personal-blog)
-[![GitHub stars](https://img.shields.io/github/stars/greglobinski/gatsby-starter-hero-blog.svg)](https://github.com/greglobinski/gatsby-starter-personal-blog/stargazers)
-[![GitHub license](https://img.shields.io/github/license/greglobinski/gatsby-starter-hero-blog.svg)](https://github.com/greglobinski/gatsby-starter-personal-blog/blob/master/LICENSE)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-![GitHub contributors](https://img.shields.io/github/contributors/greglobinski/gatsby-starter-hero-blog.svg)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/greglobinski/gatsby-starter-hero-blog.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fgreglobinski%2Fgatsby-starter-hero-blog)
-
-  <br />
-
-![](static/screens/gatsby-starter-hero-blog.gif) <br />
-
-  <br />
-
-See the starter in action » [demo website](https://gatsby-starter-hero-blog.greglobinski.com/) <br />For more information visit » [dev.greglobinski.com/gatsby-starter-hero-blog](https://dev.greglobinski.com/gatsby-starter-hero-blog/)
-
-## Description
-
-A ready to use, easy to customize 'like theme' starter with a 'Hero' section on the home page.
-
-The starter was initially built for Gatsby v1. Now, thanks to [@mohsenkhanpour](https://github.com/mohsenkhanpour) it's [upgraded](https://github.com/greglobinski/gatsby-starter-hero-blog/issues/32) to Gatsby v2. Thank you Mohsen :)
-
-The original version of the starter is preserved as the branch `gatsby-v1`.
-
-## Features:
-
-- Easy editable content in **Markdown** files (posts, pages and parts)
-- **CSS** with `styled-jsx` and `PostCSS`
-- **SEO** (sitemap generation, robot.txt, meta and OpenGraph Tags)
-- **Social** sharing (Twitter, Facebook, Google, LinkedIn)
-- **Comments** (Facebook)
-- **Images** lazy loading and `webp` support (gatsby-image)
-- Post **categories** (category based post list)
-- Full text **searching** (Algolia)
-- **Contact** form (Netlify form handling)
-- Form elements and validation with `ant-design`
-- **RSS** feed
-- 100% **PWA** (manifest.webmanifest, offline support, favicons)
-- Google **Analytics**
-- App **favicons** generator (node script)
-- Easy customizable base **styles** via `theme` object generated from `yaml` file (fonts, colors, sizes)
-- React **v.16.3** (gatsby-plugin-react-next)
-- **Components** lazy loading (social sharing)
-- **ESLint** (google config)
-- **Prettier** code styling
-- Webpack `BundleAnalyzerPlugin`
-- **Gravatar** image (optional) instead local Avatar/Logo image
-
-## Prerequisites
-
-If you do not have Gatsby Cli installed yet, do it first.
-
-```text
-npm install --global gatsby-cli
+```sh
+git clone https://github.com/kurohune538/cham538.com.git
+cd cham538.com
+python3 scripts/build_mirror.py
+python3 scripts/validate_site.py
+python3 -m http.server 8087 --directory dist
 ```
 
-More information on [GatsbyJS.org](https://www.gatsbyjs.org/tutorial/part-one)
+`http://localhost:8087/` で確認できます。`dist/` は毎回生成されるため、直接編集しません。
 
-## Getting started
+## 編集するファイル
 
-Install the starter using Gatsby Cli `gatsby new` command.
+| 場所 | 内容 |
+| --- | --- |
+| `original-pages/` | 移行元の11ページとrobots・sitemapの原稿。既存ページの本文を編集する場所 |
+| `content/` | READ BETWEEN YOUの詳細ページとWorks先頭の紹介カード |
+| `assets/` | 移行済みの画像・既存CSSなど354素材。ファイル名は参照元URLから生成したもの |
+| `static/` | 共通のナビゲーションJS・補正CSS・404・HTTPヘッダーと、READ BETWEEN YOUの画像・CSS |
+| `config/asset-manifest.json` | 同梱素材と元の公開URLの対応 |
+| `config/css-assets.json` | CSSから参照される追加素材の元URL |
+| `scripts/build_mirror.py` | HTML・フォント・ナビゲーションを組み合わせて`dist/`を再生成 |
+| `scripts/validate_site.py` | HTML・CSSのローカル参照とサイトマップを検証 |
+| `wrangler.jsonc` | 公開Workerと静的ファイル配信の設定 |
 
-```text
-gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/greglobinski/gatsby-starter-hero-blog.git
-```
+READ BETWEEN YOUを更新するときは、`content/read-between-you.html`、`content/read-between-you-card.html`、`static/read-between-you.css`を編集してビルドします。新しい作品を追加するときは、原稿・画像に加えてビルド処理とサイトマップへの登録も追加します。
 
-Go into the newly created directory and run
+ビルド時に生成する素材対応や移行元HTMLの調査結果は`.local/audit/`に置き、Gitには含めません。旧移行作業の管理画面記録、認証情報、`.wrangler/`、生成済みの`dist/`も管理対象から除いています。
 
-```text
-gatsby develop
-```
+## GitHubでの更新
 
-to hot-serve your website on http://localhost:8000 or
+変更用のブランチで編集し、Pull Requestを作成します。GitHub Actionsは、Pull Requestと`master`へのpushで以下を実行します。
 
-```text
-gatsby build
-```
+1. 同梱素材からサイトをビルド
+2. HTML・CSSの画像やファイル参照、サイトマップの整合性を検証
+3. 共通JavaScriptの構文を確認
 
-to create static site ready to host (/public).
+CIにはデプロイ権限やCloudflareの認証情報を渡していません。
 
-##### External services
+## 公開
 
-The starter uses external services for some functions: comments, searching, analytics. To use them you have to secure some access data. All services are free to use or have generous free tiers big enough for a personal blog.
+1. `master`の最新版を取得し、上記のビルドと検証を実行します。
+2. Cloudflare Dashboardで既存の`cham538-static`を開き、**New deployment**から`dist/`フォルダを選びます。
+3. Assets directoryは`/`、HTML handlingは`auto-trailing-slash`、Not found handlingは`404-page`を維持して公開します。
 
-Create an `.env` file like below in the root folder. Change `...` placeholders with real data.
-<br />By default, your `.env` file will be ignored by git. Remove `.env` from `.gitignore` in order to be able to push the file to your repository.
+リポジトリ全体はアップロードせず、生成した`dist/`だけを配信します。GitHubへのpushやPRのマージでは本番デプロイは行いません。
 
-```text
-GOOGLE_ANALYTICS_ID=...
-ALGOLIA_APP_ID=...
-ALGOLIA_SEARCH_ONLY_API_KEY=...
-ALGOLIA_ADMIN_API_KEY=...
-ALGOLIA_INDEX_NAME=...
-FB_APP_ID=...
-```
+- 正規URL: <https://www.cham538.com/>
+- Worker URL: <https://cham538-static.kurohune538.workers.dev/>
+- READ BETWEEN YOU: <https://www.cham538.com/work/read-between-you/>
 
-### Instructions & tutorials
+## 外部サービス
 
-- [How to install, setup and add new content to a Blog starter](https://dev.greglobinski.com/install-blog-starter/)
-- [Setup Algolia account for your GatsbyJS blog](https://dev.greglobinski.com/setup-algolia-account/)
-- More articles at [Front-end web development with Greg](https://dev.greglobinski.com/)
+Adobe Fontsは既存Web Projectの公式埋め込み、Google Fontsは公式CSSを使用しています。フォントファイルはリポジトリに含めません。既存のYouTubeなどの埋め込みは、それぞれのサービスに依存します。問い合わせフォームは移行時の方針に従い、ビルドで除去しています。
 
-## Windows users
-
-You should take a look at this: [Gatsby on Windows](https://www.gatsbyjs.org/docs/gatsby-on-windows/)
-
-## Authors
-
-- Greg Lobinski [@greglobinski](https://github.com/greglobinski)
-
-See also the list of [contributors](https://github.com/greglobinski/gatsby-starter-personal-blog/graphs/contributors) who participated in this project.
-
-## Contributing
-
-- Fork the repo
-- Create your feature branch (git checkout -b feature/fooBar)
-- Commit your changes (git commit -am 'Add some fooBar')
-- Push to the branch (git push origin feature/fooBar)
-- Create a new Pull Request
-
-## Licence
-
-MIT License
-
-Copyright (c) 2017 gatsbyjs <br />Copyright (c) 2018 greg lobinski
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+画像・作品・ロゴ・外部フォントの権利は、それぞれの権利者に帰属します。旧GatsbyスターターのLICENSEは保持しています。

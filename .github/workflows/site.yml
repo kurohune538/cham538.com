@@ -1,0 +1,25 @@
+name: Site checks
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Build from bundled source
+        run: python3 scripts/build_mirror.py
+      - name: Validate pages, assets and sitemap
+        run: python3 scripts/validate_site.py
+      - name: Check navigation JavaScript syntax
+        run: node --check static/site.js

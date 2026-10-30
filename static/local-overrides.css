@@ -1,0 +1,73 @@
+/* Local migration overrides. Adobe Fonts load from the owner's official kit;
+   font binaries are never copied or self-hosted. */
+html,
+body {
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+/* Open-font fallback used only if the official Adobe kit cannot load. */
+[style*="proxima-nova"],
+[style*="futura-pt"],
+[style*="a-otf-futo-go-b101-pr6n"] {
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+.menu-button {
+  cursor: pointer;
+}
+
+.menu-button:focus-visible,
+.navigation-item:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 4px;
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .navigation .w-nav-menu {
+    display: none;
+  }
+
+  .navigation .w-nav-menu.is-open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 1001;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 18px 28px 24px;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .navigation .w-nav-menu.is-open .navigation-item {
+    display: block;
+    padding: 12px 0;
+  }
+
+  .menu-button.is-open {
+    background: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
