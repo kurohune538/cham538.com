@@ -3,3 +3,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 
+/downloads/Shinnosuke-Komiya-CV-2026.pdf
+  Content-Type: application/pdf
+  Content-Disposition: attachment; filename="Shinnosuke-Komiya-CV-2026.pdf"
+

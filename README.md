@@ -24,15 +24,19 @@ python3 -m http.server 8087 --directory dist
 | --- | --- |
 | `original-pages/` | 移行元の11ページとrobots・sitemapの原稿。既存ページの本文を編集する場所 |
 | `content/` | READ BETWEEN YOU・Cascade・Epitaph of the Earthの詳細ページとWorksの紹介カード |
+| `content/cv-2026.json` | CVに基づく経歴・学歴・受賞・発表・展示歴と、既存サイトから保持した項目 |
 | `assets/` | 移行済みの画像・既存CSSなど354素材。ファイル名は参照元URLから生成したもの |
 | `static/` | 共通のナビゲーションJS・補正CSS・404・HTTPヘッダーと、作品の画像・CSS |
 | `config/asset-manifest.json` | 同梱素材と元の公開URLの対応 |
 | `config/css-assets.json` | CSSから参照される追加素材の元URL |
 | `scripts/build_mirror.py` | HTML・フォント・ナビゲーションを組み合わせて`dist/`を再生成 |
 | `scripts/validate_site.py` | HTML・CSSのローカル参照とサイトマップを検証 |
+| `scripts/cv_content.py` | Home・About・AppearancesのCV情報と共通ダウンロードリンクを生成 |
 | `wrangler.jsonc` | 公開Workerと静的ファイル配信の設定 |
 
 READ BETWEEN YOUを更新するときは、`content/read-between-you.html`、`content/read-between-you-card.html`、`static/read-between-you.css`を編集してビルドします。Epitaph of the Earthは`content/epitaph-of-the-earth.html`、`content/epitaph-of-the-earth-card.html`、`static/epitaph-of-the-earth.css`と`static/epitaph-*.jpg`で管理します。Cascadeは`content/cascade.html`、`content/cascade-card.html`、`static/cascade.css`と`static/cascade-key-visual.jpg`で管理します。新しい作品を追加するときは、原稿・画像に加えてビルド処理とサイトマップへの登録も追加します。
+
+CV情報は`content/cv-2026.json`で編集します。ダウンロード用の原本PDFは`static/downloads/Shinnosuke-Komiya-CV-2026.pdf`、表示用CSSは`static/cv.css`です。ビルド時にHome・About・Appearancesへ反映し、PDFを`dist/downloads/`へコピーします。2026年10月8日更新のCVを基準とし、職歴はPDFの期間欄に合わせています。PDF本体は変更していません。
 
 ビルド時に生成する素材対応や移行元HTMLの調査結果は`.local/audit/`に置き、Gitには含めません。旧移行作業の管理画面記録、認証情報、`.wrangler/`、生成済みの`dist/`も管理対象から除いています。
 
@@ -59,6 +63,7 @@ CIにはデプロイ権限やCloudflareの認証情報を渡していません�
 - READ BETWEEN YOU: <https://www.cham538.com/work/read-between-you/>
 - Cascade: <https://www.cham538.com/work/cascade/>
 - Epitaph of the Earth: <https://www.cham538.com/work/epitaph-of-the-earth/>
+- CV (PDF): <https://www.cham538.com/downloads/Shinnosuke-Komiya-CV-2026.pdf>
 
 ## 外部サービス
 
