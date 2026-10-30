@@ -11,6 +11,8 @@ import shutil
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
+from cv_content import apply_cv_content
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "original-pages"
@@ -353,6 +355,7 @@ def main() -> None:
 
     shutil.copyfile(SOURCE / "robots.txt", DIST / "robots.txt")
     shutil.copyfile(SOURCE / "sitemap.xml", DIST / "sitemap.xml")
+    apply_cv_content(ROOT)
     add_portfolio_projects()
     write_download_config(assets, "curl-assets.conf")
     css_extras = localize_downloaded_css(assets)

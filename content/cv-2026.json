@@ -1,0 +1,69 @@
+{
+  "updated": "8 October 2026",
+  "download": "/downloads/Shinnosuke-Komiya-CV-2026.pdf",
+  "profile": "I’m an artist, researcher, design engineer and educator exploring cognitive human augmentation: how encounters with people, organisms, machines and virtual objects can expand perception. My practice brings speculative perspectives to questions about future technologies and society.",
+  "experience": [
+    {"date": "2026/07 – present", "title": "Project Researcher", "organization": "The University of Tokyo", "detail": "Interfaculty Initiative in Information Studies", "page": 1},
+    {"date": "2024/05 – 2026/04", "title": "Project Researcher / André Hoffmann Fellow", "organization": "World Economic Forum / Center for Global Commons, The University of Tokyo", "url": "https://www.weforum.org/people/shinnosuke-komiya-a5db26d746/", "page": 1},
+    {"date": "2018 – 2025/07", "title": "Design Engineer / Chief Design Officer / Co-founder", "organization": "Eukarya Inc.", "detail": "Established a design and development team; developed front-end software and product interfaces.", "page": 1},
+    {"date": "2017 – 2018", "title": "Design Engineer / UX Designer", "organization": "Recruit Holdings Co., Ltd.", "detail": "UX research and growth design for Townwork, a Japanese part-time-job service, with a focus on improving job search.", "page": 1},
+    {"date": "2016 – present", "title": "Design Engineer / CEO", "organization": "DesignCat Inc.", "detail": "Local-government marketing projects and web services for sharing design knowledge.", "page": 1}
+  ],
+  "education": [
+    {"date": "2024/04 –", "title": "PhD candidate", "organization": "The University of Tokyo", "detail": "Interdisciplinary Information Studies", "page": 1},
+    {"date": "2020/09 – 2022/05", "title": "Master of Professional Studies", "organization": "New York University", "detail": "Tisch School of the Arts, Interactive Telecommunications Program (ITP)", "page": 1},
+    {"date": "2015/04 – 2017/03", "title": "Master of Design", "organization": "Tokyo Metropolitan University", "detail": "Division of Industrial Art, Graduate School of System Design", "page": 1},
+    {"date": "2011/04 – 2015/03", "title": "Bachelor of Design", "organization": "Tokyo Metropolitan University", "detail": "Division of Industrial Art, Faculty of System Design", "page": 1}
+  ],
+  "teaching": [
+    {"date": "2026", "title": "Part-time Lecturer", "organization": "Aoyama Gakuin University", "detail": "The Expression of Spatial Information", "page": 1},
+    {"date": "2023", "title": "Part-time Lecturer", "organization": "Princeton University", "detail": "Policing and Militarization Today", "url": "https://registrar.princeton.edu/course-offerings/course-details?courseid=014873&term=1234", "page": 1},
+    {"date": "2019", "title": "Part-time Lecturer", "organization": "Tokyo University of Technology", "detail": "Basic Human Computer Interaction", "page": 1},
+    {"date": "2019", "title": "Part-time Adviser / Mentor", "organization": "Techpreneur Inc.", "detail": "Design & Technical Adviser", "page": 1},
+    {"date": "2016 – 2017", "title": "Teaching Assistant", "organization": "Tokyo Metropolitan University", "detail": "Network practice class, Industrial Art Department", "source": "existing homepage"}
+  ],
+  "awards": [
+    {"date": "2023", "title": "ArcGIS Prize", "organization": "MIT Reality Hack", "detail": "Prize: USD 3,000.", "page": 2},
+    {"date": "2022", "title": "Best Demo — Epitaph of the Earth", "organization": "NIME 2022", "url": "https://blog.bela.io/nime-2022/", "page": 2},
+    {"date": "2022", "title": "NEWVIEW AWARD Finalist", "organization": "Ambient Divergence", "source": "existing About page"},
+    {"date": "2021", "title": "First Place — Graphic Recorder", "organization": "HackDay 2021", "detail": "Prize: USD 30,000.", "page": 2},
+    {"date": "2018", "title": "Engine Award / Best Technical Product — Tilestone", "organization": "Recruit Holdings Co., Ltd.", "page": 2},
+    {"date": "2018", "title": "Best Growth Prize — Tilestone", "organization": "Recruit Holdings Co., Ltd.", "source": "existing About page"},
+    {"date": "2018", "title": "Tech Award — Mangaka", "organization": "HackDay 2018", "source": "existing About and Appearances pages"},
+    {"date": "2017", "title": "Grand Prix — GROOVE", "organization": "Mashup Award 2017 / Recruit Holdings Co., Ltd.", "detail": "Prize: JPY 1,000,000; approximately 400 participants.", "page": 2},
+    {"date": "2017", "title": "First Prize of Faculty Work — smarTcane", "organization": "Department of Design, Tokyo Metropolitan University", "detail": "Approximately 60 participants.", "page": 2},
+    {"date": "2016", "title": "SXSW Prize — GROOVE", "organization": "The University of Tokyo / Todai To Texas", "detail": "SXSW exhibition opportunity and JPY 300,000 in development support.", "page": 2},
+    {"date": "2016", "title": "JPHACKS SXSW Award — GROOVE", "organization": "JPHACKS", "source": "existing About page"},
+    {"date": "2015", "title": "Best IoT Award — PetaPeta", "organization": "Mashup Award 11 / Recruit Holdings Co., Ltd.", "detail": "Prize: approximately USD 1,800; approximately 400 participants.", "page": 2},
+    {"date": "2015", "title": "GeoActivity Festa Encouragement Award", "organization": "Geospatial Expo / Young Participants category", "source": "existing About page"}
+  ],
+  "residencies": [
+    {"date": "2022", "title": "Micro Grant Artist in Residency", "organization": "FloodNet / NYU Tandon School of Engineering / CUNY", "page": 2},
+    {"date": "2022", "title": "Pratt>FORWARD Artist in Residency", "organization": "Pratt Institute / New Lab, Brooklyn", "url": "https://www.pratt.edu/news/forging-community-through-mentorship/", "page": 2}
+  ],
+  "presentations": [
+    {"date": "2025", "title": "Invited Talk — Hoffmann Fellows Showcase", "organization": "Sustainable Asia Conference 2025", "detail": "World Economic Forum Fellows Showcase, Main Room. Shinnosuke Komiya.", "url": "https://www.suss.edu.sg/docs/default-source/dept_school_of_business/sustainable-asia-conference/hoffmann-fellow-showcase-panel.pdf?sfvrsn=913176e0_18", "page": 2},
+    {"date": "2022", "title": "Epitaph of the Earth", "organization": "New Interfaces for Musical Expression (NIME 2022)", "detail": "Shinnosuke Komiya and Tetsuaki Baba. Chosen as Best Demo.", "url": "https://doi.org/10.21428/92fbeb44.2e5243ba", "page": 2},
+    {"date": "2017", "title": "Development of a real time feedback system during T-cane utilization for rehabilitation", "organization": "SIGAAC Vol. 2, IPSJ", "detail": "Shinnosuke Komiya, Tetsuaki Baba, Youichiro Eguchi, Kei Sato and Hidenori Watanabe.", "page": 2},
+    {"date": "2015", "title": "Proposal of a body movement controlled multimedia device", "organization": "Interaction 2015, IPSJ", "detail": "Shinnosuke Komiya, Kumiko Kushiyama and Tetsuaki Baba.", "page": 2},
+    {"date": "2015", "title": "A new outdoor activity utilizing smartphone and insole device", "organization": "ADADA Japan 2015", "detail": "Shinnosuke Komiya, Hidenori Watanabe, Tetsuaki Baba, Taiga Sano and Hiroki Inoue.", "page": 2}
+  ],
+  "exhibitions": [
+    {"date": "2023", "title": "Yowami wo nigiru sushiya", "organization": "Gallery 5610, Tokyo, Japan", "detail": "Group exhibition.", "page": 3},
+    {"date": "2023", "title": "hAIku", "organization": "United Nations International School, New York, USA", "detail": "Invited performance.", "page": 3},
+    {"date": "2023", "title": "Epitaph of the Earth", "organization": "FiveMyles Gallery, Brooklyn, New York, USA", "detail": "Invited performance.", "url": "https://vimeo.com/847109093", "page": 3},
+    {"date": "2019", "title": "Yowami wo nigiru sushiya", "organization": "Yutenji Rocket, Tokyo, Japan", "detail": "Group exhibition.", "page": 3},
+    {"date": "2017", "title": "GROOVE", "organization": "SXSW, Texas, USA", "detail": "Exhibition.", "url": "/work/groove", "source": "existing About and Appearances pages"}
+  ],
+  "works": [
+    {"title": "PetaPeta", "url": "/work/petapeta", "detail": "A smartphone and smart-insole tag game in which walking earns points, running reveals a player’s location, Bluetooth proximity passes the role of ‘it’, and a scoreboard tracks rankings.", "page": 1},
+    {"title": "GROOVE", "url": "/work/groove", "detail": "A wearable glove that connects a dancer’s movements to sound, video and light, including LEDs on the glove.", "page": 1},
+    {"title": "Epitaph of the Earth", "url": "/work/epitaph-of-the-earth", "detail": "A rock player combining custom hardware and software to bring the characteristics of individual rocks into an evolving musical composition.", "page": 1}
+  ],
+  "qualifications": [
+    {"title": "Practice", "detail": "Front-end engineering and UX design; human-resources products and customer research; entrepreneurship, communication and collaborative product development.", "page": 2},
+    {"title": "Design tools", "detail": "Photoshop, Illustrator, Sketch, Figma and After Effects.", "page": 2},
+    {"title": "Software", "detail": "JavaScript, Node.js, React, Vue.js, jQuery, Ruby, Swift and Unity.", "page": 2},
+    {"title": "Certification", "detail": "Cesium Certified Developer (2023).", "page": 2}
+  ]
+}
