@@ -288,7 +288,7 @@ def add_portfolio_projects() -> None:
     grid = '<div class="w-layout-grid grid">'
     if works.count(grid) != 1:
         raise RuntimeError("Expected one Works grid for the new project card")
-    projects = ("read-between-you", "epitaph-of-the-earth")
+    projects = ("read-between-you", "cascade", "epitaph-of-the-earth")
     card = "".join((CONTENT / f"{slug}-card.html").read_text(encoding="utf-8") for slug in projects)
     works_path.write_text(works.replace(grid, grid + card, 1), encoding="utf-8")
 
@@ -309,12 +309,14 @@ def add_portfolio_projects() -> None:
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(page, encoding="utf-8")
     for name in ("read-between-you-key-visual.jpg", "read-between-you.css",
-                 "epitaph-installation.jpg", "epitaph-placement.jpg", "epitaph-of-the-earth.css"):
+                 "epitaph-installation.jpg", "epitaph-placement.jpg", "epitaph-of-the-earth.css",
+                 "cascade-waterfall-prototype.png", "cascade.css"):
         shutil.copyfile(STATIC / name, DIST / "assets" / name)
 
     sitemap_path = DIST / "sitemap.xml"
     sitemap = sitemap_path.read_text(encoding="utf-8")
-    entry = "    <url><loc>https://www.cham538.com/work/read-between-you</loc></url>\n"
+    entry = "".join(f"    <url><loc>https://www.cham538.com/work/{slug}</loc></url>\n"
+                    for slug in projects if f"work-{slug}.html" not in PAGES)
     sitemap_path.write_text(sitemap.replace("</urlset>", entry + "</urlset>"), encoding="utf-8")
 
 
@@ -367,7 +369,7 @@ def main() -> None:
         encoding="utf-8",
     )
     write_content_audit()
-    print(f"Prepared {len(PAGES) + 1} pages and {len(assets)} downloadable assets, plus project media.")
+    print(f"Prepared {len(list(DIST.rglob('index.html')))} pages and {len(assets)} downloadable assets, plus project media.")
 
 
 if __name__ == "__main__":

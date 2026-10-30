@@ -1,0 +1,57 @@
+.cascade-project { max-width: 1200px; margin: 0 auto; padding: 30px 40px 80px; color: #1a1b1f; }
+.cascade-project p { margin: 0 0 22px; }
+.cascade-project a { color: inherit; }
+.cascade-back { display: inline-block; margin-bottom: 48px; font-size: 13px; text-decoration: none; }
+.cascade-kicker { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #626469; }
+.cascade-intro h1 { margin: 14px 0 24px; font-size: clamp(32px, 5.1vw, 66px); line-height: 1.12; font-weight: 500; letter-spacing: -.035em; }
+.cascade-deck { font-size: clamp(22px, 2.7vw, 32px); line-height: 1.4; font-weight: 400; }
+.cascade-summary { max-width: 680px; font-size: 17px; line-height: 1.8; color: #52545a; }
+.cascade-japanese { font-size: 15px; line-height: 2; letter-spacing: .025em; }
+.cascade-hero { margin: 48px 0 38px; }
+.cascade-hero img { display: block; width: 100%; height: auto; }
+.cascade-hero figcaption { margin-top: 10px; font-size: 11px; line-height: 1.6; color: #72747a; }
+.cascade-facts { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 24px; margin: 0 0 80px; padding: 26px 0; border-top: 1px solid #e1e1e3; border-bottom: 1px solid #e1e1e3; }
+.cascade-facts dt { margin-bottom: 10px; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: #72747a; }
+.cascade-facts dd { margin: 0; font-size: 13px; line-height: 1.9; }
+.cascade-section { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; padding: 0 0 70px; margin-bottom: 65px; border-bottom: 1px solid #e1e1e3; }
+.cascade-section-label > span { display: block; margin-bottom: 18px; font-size: 12px; color: #85878a; }
+.cascade-section h2 { margin: 0; font-size: 29px; line-height: 1.4; font-weight: 400; letter-spacing: -.025em; }
+.cascade-copy { font-size: 16px; line-height: 1.9; }
+.cascade-translation { margin-top: 32px; color: #606269; font-size: 14px; line-height: 2.1; }
+.cascade-steps { margin: 0; padding: 0 0 0 22px; }
+.cascade-steps li { padding-left: 8px; margin-bottom: 30px; }
+.cascade-steps h3 { margin: 0 0 8px; font-size: 18px; line-height: 1.6; font-weight: 500; }
+.cascade-tools { font-size: 13px; color: #72747a; }
+.cascade-note { margin-top: 36px; padding: 24px 26px 4px; background: #f6f6f7; font-size: 12px; line-height: 1.9; color: #606269; }
+.cascade-footer { display: flex; justify-content: space-between; gap: 20px; font-size: 12px; color: #72747a; }
+@media (max-width: 767px) {
+  .cascade-project { padding: 20px 24px 50px; }
+  .cascade-back { margin-bottom: 32px; }
+  .cascade-kicker { font-size: 10px; line-height: 1.8; }
+  .cascade-summary { font-size: 15px; }
+  .cascade-japanese { font-size: 13px; }
+  .cascade-hero { margin-top: 32px; }
+  .cascade-facts { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px 20px; margin-bottom: 50px; }
+  .cascade-section { grid-template-columns: 1fr; gap: 28px; padding-bottom: 44px; margin-bottom: 44px; }
+  .cascade-section h2 { font-size: 26px; }
+  .cascade-section h2 br { display: none; }
+  .cascade-copy { font-size: 15px; }
+  .cascade-translation { font-size: 13px; }
+  .cascade-note { padding: 20px 20px 1px; }
+  .cascade-footer { flex-direction: column; gap: 14px; }
+}
+
+.cascade-visual { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 56px; padding: 40px 64px; background: #101514; color: #eee; }
+.cascade-portrait { width: 100%; max-width: 300px; aspect-ratio: 416 / 740; justify-self: center; overflow: hidden; }
+.cascade-hero .cascade-portrait img { width: 100%; height: 100%; object-fit: cover; }
+.cascade-visual-copy > span { display: block; margin-bottom: 32px; color: #a9b4af; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.cascade-visual-copy p { font-size: clamp(22px, 2.4vw, 32px); line-height: 1.5; }
+.cascade-visual-copy p[lang="ja"] { font-size: 15px; line-height: 2; color: #b8c2bc; }
+.cascade-credit { margin-top: 36px !important; font-size: 12px; line-height: 1.9; color: #72747a; }
+.cascade-project a:focus-visible { outline: 2px solid #46675a; outline-offset: 5px; }
+@media (max-width: 767px) {
+  .cascade-visual { grid-template-columns: 1fr; gap: 28px; padding: 28px 24px; }
+  .cascade-portrait { max-width: 230px; }
+  .cascade-visual-copy { text-align: center; }
+  .cascade-visual-copy > span { margin-bottom: 18px; }
+}
