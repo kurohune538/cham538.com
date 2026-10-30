@@ -310,7 +310,7 @@ def add_portfolio_projects() -> None:
         target.write_text(page, encoding="utf-8")
     for name in ("read-between-you-key-visual.jpg", "read-between-you.css",
                  "epitaph-installation.jpg", "epitaph-placement.jpg", "epitaph-of-the-earth.css",
-                 "cascade-waterfall-prototype.png", "cascade.css"):
+                 "cascade-key-visual.jpg", "cascade.css"):
         shutil.copyfile(STATIC / name, DIST / "assets" / name)
 
     sitemap_path = DIST / "sitemap.xml"
