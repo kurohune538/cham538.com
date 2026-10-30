@@ -281,14 +281,15 @@ def write_content_audit() -> None:
     )
 
 
-def add_read_between_you() -> None:
+def add_portfolio_projects() -> None:
     """Layer new portfolio content onto the preserved Webflow export."""
     works_path = DIST / "works/index.html"
     works = works_path.read_text(encoding="utf-8")
     grid = '<div class="w-layout-grid grid">'
     if works.count(grid) != 1:
         raise RuntimeError("Expected one Works grid for the new project card")
-    card = (CONTENT / "read-between-you-card.html").read_text(encoding="utf-8")
+    projects = ("read-between-you", "epitaph-of-the-earth")
+    card = "".join((CONTENT / f"{slug}-card.html").read_text(encoding="utf-8") for slug in projects)
     works_path.write_text(works.replace(grid, grid + card, 1), encoding="utf-8")
 
     # Reuse the current site's actual navigation and font/style embeds.
@@ -300,13 +301,15 @@ def add_read_between_you() -> None:
     styles = [tag for tag in styles if 'rel="canonical"' not in tag]
     if not any("local-overrides.css" in tag for tag in styles):
         raise RuntimeError("Expected the current site's styles in the project page")
-    page = (CONTENT / "read-between-you.html").read_text(encoding="utf-8")
-    page = page.replace("__SITE_NAVIGATION__", navigation)
-    page = page.replace("__SITE_STYLES__", "\n".join(styles))
-    target = DIST / "work/read-between-you/index.html"
-    target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(page, encoding="utf-8")
-    for name in ("read-between-you-key-visual.jpg", "read-between-you.css"):
+    for slug in projects:
+        page = (CONTENT / f"{slug}.html").read_text(encoding="utf-8")
+        page = page.replace("__SITE_NAVIGATION__", navigation)
+        page = page.replace("__SITE_STYLES__", "\n".join(styles))
+        target = DIST / f"work/{slug}/index.html"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(page, encoding="utf-8")
+    for name in ("read-between-you-key-visual.jpg", "read-between-you.css",
+                 "epitaph-installation.jpg", "epitaph-placement.jpg", "epitaph-of-the-earth.css"):
         shutil.copyfile(STATIC / name, DIST / "assets" / name)
 
     sitemap_path = DIST / "sitemap.xml"
@@ -348,7 +351,7 @@ def main() -> None:
 
     shutil.copyfile(SOURCE / "robots.txt", DIST / "robots.txt")
     shutil.copyfile(SOURCE / "sitemap.xml", DIST / "sitemap.xml")
-    add_read_between_you()
+    add_portfolio_projects()
     write_download_config(assets, "curl-assets.conf")
     css_extras = localize_downloaded_css(assets)
     if css_extras:
