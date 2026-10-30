@@ -23,7 +23,7 @@ python3 -m http.server 8087 --directory dist
 | 場所 | 内容 |
 | --- | --- |
 | `original-pages/` | 移行元の11ページとrobots・sitemapの原稿。既存ページの本文を編集する場所 |
-| `content/` | READ BETWEEN YOU・Epitaph of the Earthの詳細ページとWorksの紹介カード |
+| `content/` | READ BETWEEN YOU・Cascade・Epitaph of the Earthの詳細ページとWorksの紹介カード |
 | `assets/` | 移行済みの画像・既存CSSなど354素材。ファイル名は参照元URLから生成したもの |
 | `static/` | 共通のナビゲーションJS・補正CSS・404・HTTPヘッダーと、作品の画像・CSS |
 | `config/asset-manifest.json` | 同梱素材と元の公開URLの対応 |
@@ -32,7 +32,7 @@ python3 -m http.server 8087 --directory dist
 | `scripts/validate_site.py` | HTML・CSSのローカル参照とサイトマップを検証 |
 | `wrangler.jsonc` | 公開Workerと静的ファイル配信の設定 |
 
-READ BETWEEN YOUを更新するときは、`content/read-between-you.html`、`content/read-between-you-card.html`、`static/read-between-you.css`を編集してビルドします。Epitaph of the Earthは`content/epitaph-of-the-earth.html`、`content/epitaph-of-the-earth-card.html`、`static/epitaph-of-the-earth.css`と`static/epitaph-*.jpg`で管理します。新しい作品を追加するときは、原稿・画像に加えてビルド処理とサイトマップへの登録も追加します。
+READ BETWEEN YOUを更新するときは、`content/read-between-you.html`、`content/read-between-you-card.html`、`static/read-between-you.css`を編集してビルドします。Epitaph of the Earthは`content/epitaph-of-the-earth.html`、`content/epitaph-of-the-earth-card.html`、`static/epitaph-of-the-earth.css`と`static/epitaph-*.jpg`で管理します。Cascadeは`content/cascade.html`、`content/cascade-card.html`、`static/cascade.css`と`static/cascade-waterfall-prototype.png`で管理します。新しい作品を追加するときは、原稿・画像に加えてビルド処理とサイトマップへの登録も追加します。
 
 ビルド時に生成する素材対応や移行元HTMLの調査結果は`.local/audit/`に置き、Gitには含めません。旧移行作業の管理画面記録、認証情報、`.wrangler/`、生成済みの`dist/`も管理対象から除いています。
 
@@ -57,6 +57,7 @@ CIにはデプロイ権限やCloudflareの認証情報を渡していません�
 - 正規URL: <https://www.cham538.com/>
 - Worker URL: <https://cham538-static.kurohune538.workers.dev/>
 - READ BETWEEN YOU: <https://www.cham538.com/work/read-between-you/>
+- Cascade: <https://www.cham538.com/work/cascade/>
 - Epitaph of the Earth: <https://www.cham538.com/work/epitaph-of-the-earth/>
 
 ## 外部サービス
