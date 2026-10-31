@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f0dc43"/>
+  <g fill="none" stroke="#958837" opacity=".2" stroke-width="2"><path d="m680 0 80 180-140 150 180 160-30 140M1040 0l-80 180 110 150-110 160 80 140M620 330h450M760 180h200M800 490h160"/></g>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#22251f">
+    <text x="72" y="78" font-size="15" letter-spacing="3">AR / STATION EXITS / WAYFINDING</text>
+    <text x="65" y="239" font-size="116" font-weight="700" letter-spacing="-5">EXIT</text>
+    <text x="75" y="314" font-size="40" font-family="Hiragino Sans,Meiryo,sans-serif">駅ナカまっぷ</text>
+    <text x="75" y="380" font-size="23">Find the direction. See the exit.</text>
+    <text x="75" y="565" font-size="14" letter-spacing="2">CAMERA VIEW + MAP</text>
+  </g>
+  <circle cx="846" cy="328" r="151" fill="#283e33"/>
+  <path d="M750 332h178m-71-71 72 71-72 71" fill="none" stroke="#f7f5d6" stroke-width="27" stroke-linejoin="round"/>
+  <g fill="#283e33"><circle cx="760" cy="180" r="8"/><circle cx="960" cy="490" r="8"/></g>
+</svg>
