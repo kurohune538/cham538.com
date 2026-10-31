@@ -52,15 +52,16 @@ def add_project_content(root: Path) -> None:
                 f'<source src="/assets/{esc(video["file"])}" type="video/mp4"/>'
                 f'<a href="/assets/{esc(video["file"])}">Watch the performance video</a></video>'
             )
-        cards[category].append(
-            f'<a href="{route}" class="w-inline-block portfolio-card">'
-            f'<div class="text-block-21">{esc(project["kicker"])}</div>'
-            f'<img src="/assets/{esc(image["file"])}" width="{image["width"]}" '
-            f'height="{image["height"]}" alt="{esc(image["alt"])}" loading="lazy" '
-            'class="image-13" style="width:100%;height:auto"/>'
-            f'<div class="text-block-23">{esc(project["title"])}</div>'
-            f'<div class="text-block-25">{esc(project["card"])}</div></a>'
-        )
+        if project.get("include_card", True):
+            cards[category].append(
+                f'<a href="{route}" class="w-inline-block portfolio-card">'
+                f'<div class="text-block-21">{esc(project["kicker"])}</div>'
+                f'<img src="/assets/{esc(image["file"])}" width="{image["width"]}" '
+                f'height="{image["height"]}" alt="{esc(image["alt"])}" loading="lazy" '
+                'class="image-13" style="width:100%;height:auto"/>'
+                f'<div class="text-block-23">{esc(project["title"])}</div>'
+                f'<div class="text-block-25">{esc(project["card"])}</div></a>'
+            )
         facts = "".join(f'<div><dt>{esc(label)}</dt><dd>{esc(value)}</dd></div>'
                         for label, value in project["facts"])
         sections = []
@@ -135,7 +136,10 @@ def add_project_content(root: Path) -> None:
             raise RuntimeError(f"Expected exactly one {category} grid")
         path.write_text(page.replace(grid, grid + "\n".join(entries), 1), encoding="utf-8")
     for name in media:
-        shutil.copyfile(root / "static" / name, dist / "assets" / name)
+        source = root / "static" / name
+        if not source.is_file():
+            source = root / "assets" / name
+        shutil.copyfile(source, dist / "assets" / name)
     sitemap_path = dist / "sitemap.xml"
     sitemap = sitemap_path.read_text(encoding="utf-8")
     sitemap_path.write_text(sitemap.replace("</urlset>", "".join(sitemap_entries) + "</urlset>"), encoding="utf-8")

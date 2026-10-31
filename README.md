@@ -24,7 +24,7 @@ python3 -m http.server 8087 --directory dist
 | --- | --- |
 | `original-pages/` | 移行元の11ページとrobots・sitemapの原稿。既存ページの本文を編集する場所 |
 | `content/` | READ BETWEEN YOU・Cascade・Epitaph of the Earthの詳細ページとWorksの紹介カード |
-| `content/projects.json` | Ambient Divergence・hAIku・インターネット履歴書・ComicHolic・駅ナカまっぷ・Stormy・Maptomの日英本文、カテゴリ、画像、公開リンク |
+| `content/projects.json` | 追加作品と旧作品アーカイブの日英本文、カテゴリ、画像、公開リンク |
 | `content/project-template.html` | 上記のWorks・Lab詳細ページに共通のHTML |
 | `content/cv-2026.json` | CVに基づく経歴・学歴・受賞・発表・展示歴と、既存サイトから保持した項目 |
 | `assets/` | 移行済みの画像・既存CSSなど354素材。ファイル名は参照元URLから生成したもの |
@@ -43,6 +43,10 @@ READ BETWEEN YOUを更新するときは、`content/read-between-you.html`、`co
 
 StormyのUI画像は、`google-hackathon2026`のコミット`ed7fc7333cf1b6b270e1a903ab6ccbba4f5a31db`をローカルで動かして取得した実画面です。開発用認証とモック応答を使い、テスト用プロフィールを画面から入力しています。実際の利用者情報やライブのAI生成結果は含みません。
 
+ComicHolicのランキング・検索、Maptomの地球儀・平面地図のUI画像は、2026年10月31日にそれぞれの公開サイトを操作して取得した実画面です。書影やポケモンの画像・名称の権利は各権利者に帰属します。
+
+旧一覧にあるGyoretsu Ya、Interactive DJ Pillars、Live Ya、Mangaka、Komenoma、Townworkのカードは、各作品の紹介ページにリンクします。本文は`content/projects.json`で管理し、`include_card: false`を指定して既存カードとの重複を防ぎます。画像のファイル名は`static/`、次いで`assets/`から解決できるため、制作当時の移行済み素材をそのまま参照できます。確認済みの資料へのリンクを掲載し、利用できなくなったショップや未確認のデモURLは載せません。
+
 WorksとLabの一覧では、ビルド時に`portfolio-grid`を付け、`static/local-overrides.css`で画像を16:9の共通枠に収めます。画像全体を上下左右の中央に置き、縦横比の異なる素材も高さを揃えます。作品詳細の写真・動画は元の比率を維持します。
 
 CV情報は`content/cv-2026.json`で編集します。ダウンロード用の原本PDFは`static/downloads/Shinnosuke-Komiya-CV-2026.pdf`、表示用CSSは`static/cv.css`です。ビルド時にHome・About・Appearancesへ反映し、PDFを`dist/downloads/`へコピーします。2026年10月8日更新のCVを基準とし、職歴はPDFの期間欄に合わせています。PDF本体は変更していません。
@@ -54,7 +58,7 @@ CV情報は`content/cv-2026.json`で編集します。ダウンロード用の�
 変更用のブランチで編集し、Pull Requestを作成します。GitHub Actionsは、Pull Requestと`master`へのpushで以下を実行します。
 
 1. 同梱素材からサイトをビルド
-2. HTML・CSSの画像やファイル参照、サイトマップの整合性を検証
+2. HTML・CSSの画像やファイル参照、サイトマップ、一覧カードの仮リンク・重複先・リンク先タイトルの整合性を検証
 3. 共通JavaScriptの構文を確認
 
 CIにはデプロイ権限やCloudflareの認証情報を渡していません。
