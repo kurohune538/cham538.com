@@ -99,6 +99,12 @@
       {"heading": "Record, discover, return", "steps": [["Keep a library", "Organize manga you have read and titles you want to read.", "「読んだ」「読みたい」を記録し、自分のライブラリをつくる。"], ["Find the next title", "Explore reviews, rankings, authors and new releases.", "レビュー、ランキング、作家、新刊情報から、次に読みたい作品を探す。"], ["Follow what continues", "Return to release information and reviews as your reading grows.", "新刊情報やほかの読者のレビューをきっかけに、読書を続ける。"]]},
       {"heading": "Designing the connections", "en": ["The project combines interface design and application development with the work of connecting book and volume records across sources. A consistent series record lets reading progress, reviews and release information meet around the same work."], "ja": ["画面や体験の設計、アプリケーションの開発に加えて、異なる情報源にある作品・巻のデータを結びつけています。同じ作品を同じシリーズとして扱えることが、読書の進み具合、レビュー、新刊情報を一つの体験につなぐ基盤になります。"]}
     ],
+    "gallery_heading": "Interface",
+    "gallery_layout": "wide",
+    "gallery": [
+      {"file": "comicholic-ranking-ui.jpg", "width": 1510, "height": 863, "alt": "ComicHolic's live manga ranking interface with period and genre filters, ratings and reading-record controls", "caption": "01 · Manga rankings · 期間・ジャンルで人気作品を探す · Live web interface, 31 Oct 2026 · 書影の権利は各権利者に帰属します"},
+      {"file": "comicholic-search-ui.jpg", "width": 1510, "height": 863, "alt": "ComicHolic's live manga search interface showing recent titles, authors, ratings and library controls", "caption": "02 · Search and discovery · 作品を探し、読書の記録につなげる · Live web interface, 31 Oct 2026 · 書影の権利は各権利者に帰属します"}
+    ],
     "links": [["Visit ComicHolic", "https://comicholic.club/"]]
   },
   {
@@ -162,9 +168,9 @@
     "summary_ja": "ポケモンの名前が世界の言語でどう変わるかを、色分けした地図で眺めるWeb実験。名前を検索し、地球儀や平面地図を行き来しながら、ことばの違いやつながりを探す。",
     "card": "Explore Pokémon names across languages through a world map, a globe and pronunciation playback.",
     "image": {
-      "file": "maptom.png", "width": 1200, "height": 630,
-      "alt": "Maptom project visual: a globe colored by Pokémon names with multilingual search and pronunciation features",
-      "caption": "Maptom · Interactive language map · An independent fan-made experiment"
+      "file": "maptom-globe-ui.jpg", "width": 1510, "height": 863,
+      "alt": "Maptom's live interface showing a globe colored by Pikachu's names, a multilingual legend and pronunciation controls",
+      "caption": "Maptom · Globe and multilingual name legend · Live web interface, 31 Oct 2026 · 非公式のファン制作物"
     },
     "facts": [["Year", "2026"], ["Format", "Interactive web experiment"], ["Interaction", "Search · Globe / flat map\nPronunciation playback"], ["Tools & data", "MapLibre GL JS · Wikidata\nNatural Earth · Web Speech"]],
     "sections": [
@@ -172,6 +178,281 @@
       {"heading": "Search, rotate, listen", "en": ["Search multilingual Pokémon names, switch between a globe and a flat map, and play available pronunciations through the browser. Wikidata labels provide the multilingual names; MapLibre renders the geographical view."], "ja": ["多言語の名前で検索し、地球儀と平面地図を切り替え、ブラウザーによる発音再生を試せます。多言語の名称にはWikidataのラベルを使い、地図の表示にはMapLibreを用いています。"]},
       {"heading": "Reading the map", "en": ["The country-to-language mapping is a simplified view. A single color cannot represent every language used in a country, and some labels rely on fallbacks. The experiment makes naming patterns explorable while keeping that simplification in view."], "ja": ["国と使用言語の対応は簡略化しており、一つの国にあるすべての言語を一色で表せるわけではありません。名称には代替のラベルを用いる場合もあります。その前提を踏まえながら、名前の分布を探索するための地図です。"]}
     ],
+    "gallery_heading": "Interface",
+    "gallery_layout": "wide",
+    "gallery": [
+      {"file": "maptom-flat-ui.jpg", "width": 1510, "height": 863, "alt": "Maptom's live flat-map interface with countries colored by Pikachu's localized names and a Japanese-language legend", "caption": "Flat map · 地球儀から平面地図へ切り替え、呼び名の分布を比べる · Live web interface, 31 Oct 2026"}
+    ],
     "links": [["Explore Maptom", "https://kurohune538.github.io/maptom/"]]
+  },
+  {
+    "slug": "gyoretsu-ya",
+    "category": "lab",
+    "include_card": false,
+    "title": "Gyoretsu Ya",
+    "kicker": "2021 · Hackathon · Web prototype",
+    "deck": "Waiting becomes a place to meet.",
+    "summary": "A web prototype for joining virtual queues and meeting people who are waiting for the same thing.",
+    "summary_ja": "オンライン上の行列に並び、同じものを待つ人や、興味の重なる人と出会うWebプロトタイプ。",
+    "image": {
+      "file": "8fc5639350cf-606099c7465d718a2e441513_-1.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "Gyoretsu Ya · project documentation from 2021",
+      "caption": "Gyoretsu Ya · Archived project image · 2021"
+    },
+    "facts": [
+      [
+        "Year",
+        "2021"
+      ],
+      [
+        "Format",
+        "Hackathon · Web prototype"
+      ]
+    ],
+    "sections": [
+      {
+        "heading": "A shared wait",
+        "en": [
+          "People can create or join a virtual queue and find others with a shared interest. The prototype was developed for Yahoo! JAPAN Hack Day 2021 Online."
+        ],
+        "ja": [
+          "自分でオンラインの行列をつくったり、気になる行列に参加したりすることで、同じものを待つ人と出会います。Yahoo! JAPAN Hack Day 2021 Onlineで制作したプロトタイプです。"
+        ]
+      }
+    ],
+    "links": [
+      [
+        "Hack Day 2021 project list",
+        "https://hackday.jp/"
+      ]
+    ]
+  },
+  {
+    "slug": "interactive-dj-pillars",
+    "category": "lab",
+    "include_card": false,
+    "title": "Interactive DJ Pillars",
+    "kicker": "2020 · Interactive installation · Performance",
+    "deck": "Music controls the space around the DJ.",
+    "summary": "An immersive DJ interface that connects controls attached to headphones with music effects and the changing light of surrounding LED pillars.",
+    "summary_ja": "ヘッドホンに取り付けたコントローラーで音楽のエフェクトと周囲のLEDの光を変化させる、没入型のDJインターフェース。",
+    "image": {
+      "file": "537a46d7c236-60b00f344297f33448197d00_-2021-05-27-17.28.53.png",
+      "width": 2858,
+      "height": 1774,
+      "alt": "Interactive DJ Pillars · project documentation from 2020",
+      "caption": "Interactive DJ Pillars · Archived project image · 2020"
+    },
+    "facts": [
+      [
+        "Year",
+        "2020"
+      ],
+      [
+        "Format",
+        "Interactive installation · Performance"
+      ],
+      [
+        "Artists",
+        "Wyatt Zhu · Shinnosuke Komiya · Weiwei Zhou"
+      ],
+      [
+        "Presentation",
+        "NYU ITP Winter Show 2020"
+      ]
+    ],
+    "sections": [
+      {
+        "heading": "Sound and light, together",
+        "en": [
+          "A DJ stands among translucent LED pillars. The headphone controls affect the music and gradients of light, making the surrounding installation part of the performance. Created with Wyatt Zhu and Weiwei Zhou and presented in the NYU ITP Winter Show 2020."
+        ],
+        "ja": [
+          "半透明のLEDの柱に囲まれたDJが、ヘッドホン上の操作部を通じて音と光をコントロールします。周囲の空間も演奏の一部として扱う作品です。Wyatt Zhu、Weiwei Zhouとの共同制作。NYU ITP Winter Show 2020で発表しました。"
+        ]
+      }
+    ],
+    "links": [
+      [
+        "NYU ITP project page",
+        "https://itp.nyu.edu/shows/winter2020/interaction-dj-pillar/"
+      ],
+      [
+        "Watch the demonstration",
+        "https://vimeo.com/491479341"
+      ]
+    ]
+  },
+  {
+    "slug": "live-ya",
+    "category": "lab",
+    "include_card": false,
+    "title": "Live Ya",
+    "kicker": "2019 · Hackathon · Virtual character",
+    "deck": "A virtual streamer you can talk to.",
+    "summary": "A hackathon prototype of an always-on virtual live streamer. Viewers enter a room and communicate with the character.",
+    "summary_ja": "いつでも配信を続けるバーチャルなライバーの、ハッカソンでのプロトタイプ。視聴者はルームに入り、キャラクターとコミュニケーションします。",
+    "image": {
+      "file": "37829e0d238b-60b008ba2dd3f32ebf14384a_liveya.jpg",
+      "width": 1380,
+      "height": 920,
+      "alt": "Live Ya · project documentation from 2019",
+      "caption": "Live Ya · Archived project image · 2019"
+    },
+    "facts": [
+      [
+        "Year",
+        "2019"
+      ],
+      [
+        "Format",
+        "Hackathon · Virtual character"
+      ]
+    ],
+    "sections": [
+      {
+        "heading": "A room for a virtual performer",
+        "en": [
+          "Live Ya explores a virtual livestream in which visitors can join the room and interact with its character. This page preserves the interface image and description from the 2019 project."
+        ],
+        "ja": [
+          "視聴者がルームに参加し、バーチャルなキャラクターとやり取りする配信体験を試しました。このページには、2019年の作品の画面と紹介を残しています。"
+        ]
+      }
+    ],
+    "links": []
+  },
+  {
+    "slug": "mangaka",
+    "category": "lab",
+    "include_card": false,
+    "title": "Mangaka",
+    "kicker": "2018 · Hackathon · Generative comic",
+    "deck": "A title becomes a comic.",
+    "summary": "A comic generator that begins with a title and assembles dialogue, illustrations and speech bubbles into a comic.",
+    "summary_ja": "タイトルを入力すると、会話、イラスト、吹き出しを組み合わせて漫画を自動生成する作品。",
+    "image": {
+      "file": "3666058c4c38-605ea0ec89b0ef678dba7d2b_l_f181229_mangaka_1.jpg",
+      "width": 700,
+      "height": 593,
+      "alt": "Mangaka · project documentation from 2018",
+      "caption": "Mangaka · Archived project image · 2018"
+    },
+    "facts": [
+      [
+        "Year",
+        "2018"
+      ],
+      [
+        "Format",
+        "Hackathon · Generative comic"
+      ]
+    ],
+    "sections": [
+      {
+        "heading": "From a title to a page",
+        "en": [
+          "The prototype generates dialogue using existing conversation data and Markov chains, then selects illustrations from Irasutoya and arranges the comic. It received a technology award at Yahoo! JAPAN Hack Day 2018 and was featured by Netlab."
+        ],
+        "ja": [
+          "会話データとマルコフ連鎖を用いて台詞を生成し、いらすとやの画像を選び、吹き出しなどを配置します。Yahoo! JAPAN Hack Day 2018でテクノロジー賞を受賞し、ねとらぼで紹介されました。"
+        ]
+      }
+    ],
+    "links": [
+      [
+        "Read the Netlab article",
+        "https://nlab.itmedia.co.jp/cont/articles/3286208/"
+      ],
+      [
+        "Hack Day presentation",
+        "https://youtu.be/VEbOvV7_BWw?t=19979"
+      ]
+    ]
+  },
+  {
+    "slug": "komenoma",
+    "category": "works",
+    "include_card": false,
+    "title": "Komenoma",
+    "kicker": "2016 – 2017 · Web service · E-commerce",
+    "deck": "An online store for single-origin rice.",
+    "summary": "An e-commerce website for single-origin rice, developed in 2016–2017.",
+    "summary_ja": "単一産地のお米を扱うECサイト。2016〜2017年のプロジェクト。",
+    "image": {
+      "file": "ad51bf75f3ae-60afeca81fd1401a657187f8_-2021-05-27-14.57.19.png",
+      "width": 1986,
+      "height": 1092,
+      "alt": "Komenoma · project documentation from 2016 – 2017",
+      "caption": "Komenoma · Archived project image · 2016 – 2017"
+    },
+    "facts": [
+      [
+        "Year",
+        "2016 – 2017"
+      ],
+      [
+        "Format",
+        "Web service · E-commerce"
+      ]
+    ],
+    "sections": [
+      {
+        "heading": "Project archive",
+        "en": [
+          "Komenoma presented single-origin rice through an online storefront. The image documents the service at the time of the project; the previous shop address is no longer available."
+        ],
+        "ja": [
+          "単一産地のお米をオンラインで届けるためのECサイトです。掲載している画面は制作当時の記録です。以前のショップURLは現在利用できないため、このページにプロジェクトの紹介を残しています。"
+        ]
+      }
+    ],
+    "links": []
+  },
+  {
+    "slug": "townwork",
+    "category": "works",
+    "include_card": false,
+    "title": "UX Design for Growth of Townwork",
+    "kicker": "2017 – 2018 · UX design",
+    "deck": "Quantitative UX design for a job-search app.",
+    "summary": "UX design work focused on the growth of Townwork, a Japanese service for finding part-time jobs.",
+    "summary_ja": "アルバイト・パートの仕事探しサービス「タウンワーク」で、成長に向けた定量的なUXデザインを担当。2017〜2018年の仕事。",
+    "image": {
+      "file": "e411243fc270-60b000bcbbf532600c2829a4_townwork.png",
+      "width": 1920,
+      "height": 1080,
+      "alt": "UX Design for Growth of Townwork · project documentation from 2017 – 2018",
+      "caption": "UX Design for Growth of Townwork · Archived project image · 2017 – 2018"
+    },
+    "facts": [
+      [
+        "Year",
+        "2017 – 2018"
+      ],
+      [
+        "Format",
+        "UX design"
+      ]
+    ],
+    "sections": [
+      {
+        "heading": "Design for growth",
+        "en": [
+          "The work focused on quantitative UX design for the Townwork app during 2017–2018. The image preserves the interface from that period."
+        ],
+        "ja": [
+          "2017〜2018年、タウンワークのアプリにおける定量的なUXデザインに取り組みました。掲載している画像は当時のインターフェースの記録です。"
+        ]
+      }
+    ],
+    "links": [
+      [
+        "Townwork · current service",
+        "https://townwork.net/"
+      ]
+    ]
   }
 ]

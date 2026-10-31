@@ -5,7 +5,9 @@ from __future__ import annotations
 
 import re
 import sys
+import unicodedata
 import xml.etree.ElementTree as ET
+from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -42,6 +44,43 @@ class References(HTMLParser):
             self.urls.extend(item.strip().split()[0] for item in values["srcset"].split(",") if item.strip())
 
 
+def normalized_title(text: str) -> str:
+    text = unescape(re.sub(r"<[^>]+>", "", text))
+    return re.sub(r"[\W_]+", "", unicodedata.normalize("NFKC", text).casefold())
+
+
+def portfolio_link_errors(page: Path) -> list[str]:
+    """Check card destinations, including valid pages for the wrong project."""
+    errors = []
+    seen = set()
+    for anchor in re.finditer(r'<a\b([^>]*)>(.*?)</a>', page.read_text(encoding="utf-8"), re.DOTALL):
+        title = re.search(r'class="text-block-(?:23|24)"[^>]*>(.*?)</div>', anchor[2], re.DOTALL)
+        if not title:
+            continue
+        label = unescape(re.sub(r"<[^>]+>", "", title[1])).strip()
+        href = re.search(r'href="([^"]*)"', anchor[1])
+        reference = unescape(href[1]) if href else ""
+        prefix = f"{page.relative_to(DIST)}: {label}"
+        if not reference or reference == "#" or reference.startswith("javascript:"):
+            errors.append(f"{prefix}: placeholder card link")
+            continue
+        destination = reference.rstrip("/")
+        if destination in seen:
+            errors.append(f"{prefix}: duplicate card destination {reference}")
+        seen.add(destination)
+        target = local_target(page, reference)
+        if target is not None and exists(target):
+            if target.is_dir():
+                target /= "index.html"
+            heading = re.search(r'<title\b[^>]*>(.*?)</title>', target.read_text(encoding="utf-8"), re.DOTALL)
+            if heading:
+                title_text = re.split(r"\s+[|–-]\s+", heading[1], maxsplit=1)[0]
+                card_title, page_title = normalized_title(label), normalized_title(title_text)
+                if page_title and page_title not in card_title and card_title not in page_title:
+                    errors.append(f"{prefix}: destination title does not match ({reference})")
+    return errors
+
+
 def main() -> int:
     if not (DIST / "index.html").is_file():
         print("No built site. Run python3 scripts/build_mirror.py first.", file=sys.stderr)
@@ -63,6 +102,9 @@ def main() -> int:
             target = local_target(css, reference)
             if target is not None and not exists(target):
                 errors.append(f"{css.relative_to(DIST)}: missing {reference}")
+
+    for listing in ("works", "lab"):
+        errors.extend(portfolio_link_errors(DIST / listing / "index.html"))
 
     sitemap = ET.parse(DIST / "sitemap.xml")
     urls = [node.text or "" for node in sitemap.findall("{http://www.sitemaps.org/schemas/sitemap/0.9}url/{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
