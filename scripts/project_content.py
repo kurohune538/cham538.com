@@ -99,9 +99,12 @@ def add_project_content(root: Path) -> None:
             gallery = "".join(figures)
             if is_collection:
                 gallery_heading = esc(project.get("gallery_heading", "Exhibition photographs"))
+                gallery_class = "portfolio-gallery-grid"
+                if project.get("gallery_layout") == "wide":
+                    gallery_class += " portfolio-gallery-grid-wide"
                 gallery = (f'<section class="portfolio-documentation" aria-label="{gallery_heading}">'
                            f'<h2>{gallery_heading}</h2>'
-                           f'<div class="portfolio-gallery-grid">{gallery}</div></section>')
+                           f'<div class="{gallery_class}">{gallery}</div></section>')
         tokens = {
             "TITLE": esc(project["title"]), "DESCRIPTION": esc(project["summary"]),
             "ROUTE": route, "KICKER": esc(project["kicker"]),

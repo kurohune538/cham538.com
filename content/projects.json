@@ -134,15 +134,22 @@
     "summary_ja": "AIエージェントが本人に代わって相手を探し、会話し、バーチャルなデートをする。その関係の予報を受け取ってから顔を知る、出会いの順序を組み替えるプロトタイプ。",
     "card": "AI agents meet first and return a relationship forecast: a hackathon experiment in mediated encounters.",
     "image": {
-      "file": "stormy.svg", "social_file": "stormy.png", "width": 1200, "height": 630,
-      "alt": "Stormy project graphic: two agent paths meet beneath a cloud and return a relationship weather forecast",
-      "caption": "Project graphic · Agent conversations, a virtual date and a relationship forecast"
+      "file": "stormy-forecast-ui.jpg", "width": 1510, "height": 919,
+      "alt": "Stormy prototype interface showing a relationship forecast and the Attraction, Compatibility, Curiosity and Safety agents' views",
+      "caption": "Prototype interface · Relationship forecast and agent perspectives · Local demonstration with test data / テストデータによる実画面"
     },
     "facts": [["Year", "2026"], ["Context", "Gemini AI Hackathon\nGoogle Japan"], ["Format", "Closed seed-pool prototype"], ["Tools", "Gemini · Google ADK\nReact · Python"]],
     "sections": [
       {"heading": "Before a face", "en": ["A profile photograph often frames an encounter before a conversation begins. Stormy experiments with a different order: agents interact first, and their exchange becomes something a person can consider before seeing a face.", "The project explores what changes when an AI represents us in an early social encounter—and how much of another person can be understood through that mediation."], "ja": ["プロフィール写真は、会話が始まる前から出会いの印象を形づくります。Stormyでは、まずエージェント同士が交流し、そのやり取りを受け取ってから相手の顔を見るという順序を試しています。", "最初の出会いをAIに託すと何が変わるのか。その仲介を通じて、相手のことをどこまで理解したと感じられるのかを探ります。"]},
       {"heading": "A forecast, not a score", "en": ["The prototype's agents scout potential partners, hold a conversation and take a virtual date. The result is expressed as a relationship forecast with qualitative weather-like descriptions, leaving room for a person to interpret the encounter."], "ja": ["エージェントが相手を探し、会話し、バーチャルなデートへ進みます。その結果を数値の相性だけにまとめず、天気のような定性的な「関係の予報」として返します。やり取りをどう受け止めるかを、本人に開いておくための表現です。"]},
-      {"heading": "A hackathon experiment", "en": ["Developed for the Gemini AI Hackathon at Google Japan. The demonstration uses a closed set of seeded profiles to explore the interaction; it is a prototype rather than an open dating service."], "ja": ["Google JapanでのGemini AI Hackathonに向けて制作しました。あらかじめ用意したプロフィールの範囲でエージェント同士の交流を試す、クローズドなデモとして開発しています。"]}
+      {"heading": "From a vibe to a forecast", "en": ["The interface begins with words about the user's mood, habits and curiosity. A scout proposes a partner and explains its choice through several agent perspectives. After the agents' exchange, the forecast brings attraction, compatibility, curiosity and safety into view before a face is revealed."], "ja": ["気分や習慣、惹かれることを言葉で選ぶところから始まります。スカウトが相手を提案すると、その理由を複数のエージェントの視点で確かめられます。交流を経て、魅力、相性、好奇心、安全性の見立てを予報として受け取り、顔を見るかどうかを考えます。"]},
+      {"heading": "A hackathon experiment", "en": ["Developed for the Gemini AI Hackathon at Google Japan. The demonstration uses a closed set of seeded profiles to explore the interaction; it is a prototype rather than an open dating service. The interface captures on this page show a local demonstration with test profiles and simulated agent responses."], "ja": ["Google JapanでのGemini AI Hackathonに向けて制作しました。あらかじめ用意したプロフィールの範囲でエージェント同士の交流を試す、クローズドなデモとして開発しています。このページの実画面は、テスト用プロフィールと模擬的なエージェント応答を用いたローカルデモの記録です。"]}
+    ],
+    "gallery_heading": "Interface",
+    "gallery_layout": "wide",
+    "gallery": [
+      {"file": "stormy-vibe-ui.jpg", "width": 1510, "height": 919, "alt": "Stormy profile interface with selectable words about mood, preferred places and curiosity", "caption": "01 · Your Stormy vibe · 気分や好みを言葉で選び、エージェントに伝える · Local demo / test data"},
+      {"file": "stormy-scout-ui.jpg", "width": 1510, "height": 919, "alt": "Stormy scout interface proposing a test profile and explaining the recommendation through five agent perspectives", "caption": "02 · Your scout liked someone · 相手の提案と、その理由を複数の視点から読む · Local demo / test data"}
     ]
   },
   {
