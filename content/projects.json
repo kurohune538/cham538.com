@@ -103,7 +103,9 @@
     "gallery_layout": "wide",
     "gallery": [
       {"file": "comicholic-ranking-ui.jpg", "width": 1510, "height": 863, "alt": "ComicHolic's live manga ranking interface with period and genre filters, ratings and reading-record controls", "caption": "01 · Manga rankings · 期間・ジャンルで人気作品を探す · Live web interface, 31 Oct 2026 · 書影の権利は各権利者に帰属します"},
-      {"file": "comicholic-search-ui.jpg", "width": 1510, "height": 863, "alt": "ComicHolic's live manga search interface showing recent titles, authors, ratings and library controls", "caption": "02 · Search and discovery · 作品を探し、読書の記録につなげる · Live web interface, 31 Oct 2026 · 書影の権利は各権利者に帰属します"}
+      {"file": "comicholic-search-ui.jpg", "width": 1510, "height": 863, "alt": "ComicHolic's live manga search interface showing recent titles, authors, ratings and library controls", "caption": "02 · Search and discovery · 作品を探し、読書の記録につなげる · Live web interface, 31 Oct 2026 · 書影の権利は各権利者に帰属します"},
+      {"file": "comicholic-detail-ui.jpg", "width": 1510, "height": 919, "alt": "ComicHolic's live Detective Conan detail page with title and author information, reading progress, new-volume notifications and a row of volume covers", "caption": "03 · Manga detail · 作品情報、読書の進み具合、巻一覧を一つの画面で確かめる · Live web interface, 31 Oct 2026 · 書影の権利は各権利者に帰属します"},
+      {"file": "comicholic-mypage-ui.jpg", "width": 1510, "height": 919, "alt": "ComicHolic's My Page interface with a public profile, a reading-taste chart, custom manga lists and a personal library grid", "caption": "04 · My Page · プロフィール、好みの傾向、マイリスト、本棚をまとめて眺める · Live web interface, 31 Oct 2026 · 書影の権利は各権利者に帰属します"}
     ],
     "links": [["Visit ComicHolic", "https://comicholic.club/"]]
   },
