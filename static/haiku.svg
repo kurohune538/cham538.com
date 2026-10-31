@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="sky" x2="1" y2="1"><stop stop-color="#e9e7df"/><stop offset="1" stop-color="#bacbc2"/></linearGradient>
+    <linearGradient id="water" x2="0" y2="1"><stop stop-color="#718c83"/><stop offset="1" stop-color="#dce4db"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#eceee7"/>
+  <circle cx="940" cy="180" r="245" fill="url(#sky)"/>
+  <circle cx="940" cy="180" r="155" fill="none" stroke="#fafaf3" stroke-width="1.5"/>
+  <path d="M560 385Q700 235 810 350T1200 290V630H560Z" fill="url(#water)"/>
+  <path d="M630 431Q800 365 1110 422M690 470Q910 414 1190 475M750 515Q980 466 1200 530" fill="none" stroke="#edf3e9" opacity=".5"/>
+  <g fill="#2b453e" font-family="Helvetica,Arial,sans-serif">
+    <text x="72" y="78" font-size="15" letter-spacing="3">POETRY / AUDIENCE / EMBODIMENT</text>
+    <text x="68" y="248" font-size="116" letter-spacing="-6">hAIku</text>
+    <text x="74" y="300" font-size="23">A word becomes a world.</text>
+  </g>
+  <g fill="none" stroke="#3f6457" stroke-width="2">
+    <rect x="77" y="356" width="230" height="108" rx="9" fill="#f8f9f2"/>
+    <path d="M100 382h115m-115 21h180m-180 21h125" opacity=".35"/>
+    <path d="M226 424h55" stroke="#b86849" stroke-width="5"/>
+    <path d="M321 409h57m-11-9 11 9-11 9"/>
+    <circle cx="440" cy="409" r="40" fill="#e7ece0"/>
+    <path d="m414 419 22-30 30 38m-40-26 14 18"/>
+  </g>
+  <g font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#355246">
+    <text x="77" y="524">01 REWRITE</text><text x="384" y="524">02 GENERATE</text>
+    <text x="680" y="568">03 PERFORM</text><text x="953" y="568">04 SHARE A VIEW</text>
+  </g>
+  <g stroke="#355246" fill="none" stroke-width="2" opacity=".85">
+    <circle cx="735" cy="435" r="12"/><path d="M735 448v39m-20-25 20-10 21 14m-21 20-17 24m17-24 19 23"/>
+    <path d="M972 457q41-41 82 0-41 41-82 0Z"/><circle cx="1013" cy="457" r="12"/>
+    <path d="M498 409h52m250 48h121m-11-8 11 8-11 8" stroke-dasharray="4 6"/>
+  </g>
+</svg>

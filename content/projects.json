@@ -1,0 +1,154 @@
+[
+  {
+    "slug": "ambient-divergence",
+    "category": "works",
+    "title": "Ambient Divergence",
+    "kicker": "2021 · Virtual reality · Ambient Style",
+    "deck": "A world seen through someone else's eyes.",
+    "summary": "A virtual reality work by Ambient Style, exploring otherness and shared perception through shifts into other people's first-person perspectives.",
+    "summary_ja": "他者の一人称視点へと移りながら、異なる身体から同じ世界を経験するVR作品。自分とは違う知覚に触れることから、他者との関わりを考える。",
+    "card": "An immersive encounter with otherness, experienced through other people's first-person perspectives.",
+    "image": {
+      "file": "ambient-divergence.png", "width": 1200, "height": 630,
+      "alt": "Ambient Divergence: translucent human figures standing in a softly lit virtual landscape",
+      "caption": "Virtual environment from Ambient Divergence · Ambient Style · NEWVIEW AWARDS 2021 finalist"
+    },
+    "facts": [["Year", "2021"], ["Format", "Virtual reality"], ["Collective", "Ambient Style\nJack Chen · Shin Komiya · Lucas Wozniak"], ["Recognition", "NEWVIEW AWARDS 2021\nFinalist"]],
+    "sections": [
+      {"heading": "The distance between us", "en": ["Created in the context of pandemic isolation and divided information environments, the work asks how a change of viewpoint might reshape our relationship to others."], "ja": ["パンデミックによる隔離や、情報環境の分断を背景に制作しました。同じ世界を共有していても、私たちが見ている風景は同じとは限りません。視点を移す体験から、他者との距離を捉え直します。"]},
+      {"heading": "A change of perspective", "en": ["Visitors enter a virtual environment and experience other figures' first-person viewpoints. Embodiment becomes a way to question the familiarity of one's own perspective."], "ja": ["仮想空間にいる他者の一人称視点へ移り、その身体から世界を見ます。自分の見方を当たり前の基準にしていることに気づき、異なる知覚に身を置くための体験です。"]},
+      {"heading": "Ambient Style", "en": ["Jack Chen, Shin Komiya and Lucas Wozniak met at NYU ITP in 2020. Built with Unity and STYLY, Ambient Divergence was selected as a NEWVIEW AWARDS 2021 finalist."], "ja": ["NYU ITPで出会ったJack Chen、Shin Komiya、Lucas Wozniakによる共同制作。UnityとSTYLYを用い、NEWVIEW AWARDS 2021のファイナリストに選出されました。"]}
+    ],
+    "links": [["NEWVIEW project page", "https://newview.design/en/works/ambient-divergence/"], ["Experience on STYLY", "https://gallery.styly.cc/scene/4942d42c-f25f-4335-bfa2-d1f694308dab"], ["Watch the video", "https://youtu.be/9I2pt4gOMvY"]]
+  },
+  {
+    "slug": "haiku",
+    "category": "works",
+    "title": "hAIku",
+    "kicker": "2023 · Participatory performance · AI, poetry & virtual worlds",
+    "deck": "A small change in a poem becomes a world to inhabit.",
+    "summary": "An audience member rewrites an AI-generated haiku. A virtual scene grows from the revised poem, a performer responds in real time, and the audience shares the performer's first-person view.",
+    "summary_ja": "Web上に漂うAIの俳句に、鑑賞者が一言を加える。その俳句から生成された情景に演者がリアルタイムで応答し、演者の一人称視点が観客へと共有される参加型パフォーマンス。",
+    "card": "Audience-edited haiku becomes a virtual scene, a live performance and a shared first-person experience.",
+    "image": {
+      "file": "haiku.svg", "social_file": "haiku.png", "width": 1200, "height": 630,
+      "alt": "hAIku concept diagram: a revised poem flows into a virtual scene, a performer and the audience's shared view",
+      "caption": "Interaction diagram · A poem → a generated scene → live performance → a shared first-person view"
+    },
+    "facts": [["Year", "2023"], ["Format", "Participatory live performance"], ["Medium", "AI-generated haiku\nWeb interface · Virtual scenes · Live embodiment"], ["Presentation", "Invited performance\nUnited Nations International School, New York"]],
+    "sections": [
+      {"heading": "Between a word and a world", "en": ["A haiku leaves space for a reader to imagine a scene. hAIku makes that act of interpretation travel between an AI, an audience member and a performing body. A small intervention in language changes the environment in which someone else must act.", "Rather than ending with a generated image, the poem continues into live performance. Each participant encounters a scene shaped by another participant's interpretation."], "ja": ["俳句は、わずかな言葉から読み手の中に風景を立ち上げます。hAIkuでは、その解釈をAI、鑑賞者、演者の身体のあいだで受け渡します。言葉への小さな介入が、別の誰かが身を置く世界を変えていきます。", "生成された情景は完成した出力として終わらず、演者の即興的な応答へと続きます。言葉を変える人、世界を演じる人、その視点を受け取る人が、異なる仕方で一つの体験をつくります。"]},
+      {"heading": "How the performance unfolds", "steps": [["Choose a floating poem", "Tap an AI-generated haiku drifting through the web interface.", "WebのUIに漂う、AIが考えた俳句をタップする。"], ["Change a word", "Add a short revision and upload the poem. A virtual scene is generated in response.", "俳句に一言の改変を加えてアップロードすると、その俳句に合わせたバーチャルな情景が生成される。"], ["Enter the scene together", "A performer responds to the generated environment in real time. Their first-person view is shared with the audience.", "演者が生成された情景に合わせてリアルタイムに演技をし、その一人称視点を観客も共有する。"]]},
+      {"heading": "A shared viewpoint", "en": ["The audience can both alter the world and witness how a performer inhabits it. The shared first-person view connects a brief act on a personal screen with a bodily response unfolding in real time.", "Presented as an invited performance at the United Nations International School in New York in 2023."], "ja": ["鑑賞者は、世界を変える立場と、その世界を生きる演者の視点を受け取る立場を行き来します。個人の画面上での短い操作が、演者の身体を通じて観客全体の体験につながります。", "2023年、ニューヨークのUnited Nations International School（UNIS）で招待パフォーマンスを実施しました。"]}
+    ]
+  },
+  {
+    "slug": "internet-resume",
+    "category": "works",
+    "title": "インターネット履歴書",
+    "kicker": "2020 · Participatory art · 弱みを握る寿司屋",
+    "deck": "What does the internet say about you?",
+    "summary": "Internet Résumé gathers fragments of publicly shared social media information into a printed résumé, making an online portrait tangible and available to take home.",
+    "summary_ja": "公開されたSNS上の情報を拾い集め、履歴書の形式にまとめて印刷し、本人に持ち帰ってもらう作品。アートコレクティブ「弱みを握る寿司屋」での活動として制作。",
+    "card": "Public social media fragments become a printed résumé: a portrait assembled from what others can see.",
+    "image": {
+      "file": "internet-resume.svg", "social_file": "internet-resume.png", "width": 1200, "height": 630,
+      "alt": "Internet Résumé project graphic: scattered public profile fragments gathered into an abstract printed résumé",
+      "caption": "Project graphic · Public profile fragments assembled into a résumé; no participant information is shown"
+    },
+    "facts": [["Year", "2020"], ["English title", "Internet Résumé"], ["Format", "Participatory artwork\nPrinted résumé"], ["Context", "Art collective\n弱みを握る寿司屋"]],
+    "sections": [
+      {"heading": "A portrait made by others", "en": ["We distribute pieces of ourselves across social media: a name, a place, a career, an interest. Each fragment has its own context. When they are collected and placed in the familiar structure of a résumé, they begin to read as a coherent account of a person.", "The work brings that assembled portrait back to its subject. What feels accurate? What is missing? Which connections become visible only when separate fragments are read together?"], "ja": ["名前、ゆかりのある場所、経歴、関心。SNSでは、それぞれ異なる文脈の中で自分の断片を公開しています。それらを集め、見慣れた履歴書の枠に配置すると、一人の人物を説明するまとまった情報のように見えてきます。", "そのように組み立てられた人物像を、本人に返します。どこまで自分らしく、何が抜け落ちているのか。別々に公開していた情報を並べることで、初めて見えてくるつながりは何かを問いかけます。"]},
+      {"heading": "From a profile to a page", "en": ["Public profile information is collected, arranged in a résumé format and printed for the participant to take away. The paper gives a fixed shape to information that is usually dispersed across screens and changing timelines."], "ja": ["公開されたプロフィール情報をまとめ、履歴書の形式で印刷し、本人に持ち帰ってもらいます。画面やタイムラインに分散していた情報が、一枚の紙に固定されます。情報が公開されていることと、それらが一つの人物像として読まれることのあいだにある距離を、手に取れる形にします。"]},
+      {"heading": "弱みを握る寿司屋", "en": ["Created in the context of the art collective 弱みを握る寿司屋. The familiar social form of a résumé becomes a setting for an encounter with how one is seen through publicly available information."], "ja": ["アートコレクティブ「弱みを握る寿司屋」で制作した作品です。履歴書という日常的な書式を通じて、自分が公開した情報から、他者にどのように見られているかと向き合う場をつくります。"]}
+    ]
+  },
+  {
+    "slug": "comicholic",
+    "category": "works",
+    "title": "ComicHolic",
+    "kicker": "2026 – · Manga discovery & reading records",
+    "deck": "記録するほど、出会いが増える。",
+    "summary": "A manga discovery service that connects reading records, reviews, new releases and other readers, helping a personal reading history lead to the next discovery.",
+    "summary_ja": "読んだ漫画や気になる作品を記録し、レビュー、新刊情報、ほかの読者を通じて次の一冊に出会うサービス。読書の記録を、発見を続けるための入り口にする。",
+    "card": "Reading records, reviews and new releases become paths to the next manga discovery.",
+    "image": {
+      "file": "comicholic.jpg", "width": 1200, "height": 630,
+      "alt": "ComicHolic brand visual with manga-style mascots and the Japanese phrase: the more you record, the more you discover",
+      "caption": "ComicHolic · Project identity and public service visual"
+    },
+    "facts": [["Year", "2026 –"], ["Format", "Manga discovery service"], ["Focus", "Reading records · Reviews\nNew releases · Discovery"], ["Platform", "Web\nReact Native / Expo application"]],
+    "sections": [
+      {"heading": "A reading history that keeps moving", "en": ["A list of finished books records where we have been. ComicHolic treats that record as the beginning of another encounter: a new volume, another work by a favorite author, or a reader whose interests overlap with our own.", "The service brings together a personal library, reviews and changing release information so that recording and discovery can happen in the same place."], "ja": ["読み終えた作品の一覧は、これまでの読書を振り返る記録です。ComicHolicでは、その記録を次の出会いの始まりとして扱います。続きを読みたい作品の新刊、好きな作家の別の作品、好みの重なる読者へとつながっていきます。", "自分のライブラリ、レビュー、日々変わる新刊情報を同じ場所にまとめ、記録することと探すことを一続きの体験にしています。"]},
+      {"heading": "Record, discover, return", "steps": [["Keep a library", "Organize manga you have read and titles you want to read.", "「読んだ」「読みたい」を記録し、自分のライブラリをつくる。"], ["Find the next title", "Explore reviews, rankings, authors and new releases.", "レビュー、ランキング、作家、新刊情報から、次に読みたい作品を探す。"], ["Follow what continues", "Return to release information and reviews as your reading grows.", "新刊情報やほかの読者のレビューをきっかけに、読書を続ける。"]]},
+      {"heading": "Designing the connections", "en": ["The project combines interface design and application development with the work of connecting book and volume records across sources. A consistent series record lets reading progress, reviews and release information meet around the same work."], "ja": ["画面や体験の設計、アプリケーションの開発に加えて、異なる情報源にある作品・巻のデータを結びつけています。同じ作品を同じシリーズとして扱えることが、読書の進み具合、レビュー、新刊情報を一つの体験につなぐ基盤になります。"]}
+    ],
+    "links": [["Visit ComicHolic", "https://comicholic.club/"]]
+  },
+  {
+    "slug": "ekinaka-map",
+    "category": "works",
+    "title": "駅ナカまっぷ",
+    "kicker": "Mobile application · AR wayfinding",
+    "deck": "The right exit, in the direction you are looking.",
+    "summary": "An augmented reality wayfinding app that overlays station exit names, directions and distances on the camera view, with a map for checking the surrounding layout.",
+    "summary_ja": "カメラを向けると、駅の出口の名前、方向、距離がその場の景色に重なるアプリ。地図と目の前の風景を頭の中で照合する負担を減らし、進みたい方向を見つけやすくする。",
+    "card": "Station exits overlaid on the camera view, connecting a map's directions with the space in front of you.",
+    "image": {
+      "file": "ekinaka-map.svg", "social_file": "ekinaka-map.png", "width": 1200, "height": 630,
+      "alt": "駅ナカまっぷ project graphic: an exit arrow connects a location on a map to a direction in space",
+      "caption": "Project graphic · Bringing station exits from the map into the direction you are facing"
+    },
+    "facts": [["Title", "駅ナカまっぷ\nEkinaka Map"], ["Format", "Mobile application"], ["Interaction", "AR exit directions\nMap · Manual position adjustment"], ["Development", "React Native / Expo\nARKit · ARCore"]],
+    "sections": [
+      {"heading": "Which way is that exit?", "en": ["In a large station, knowing an exit's name does not always tell you which way to turn. Reading a map also requires matching its orientation with your body and the surrounding space.", "Ekinaka Map places exit labels in the direction of the exits themselves. Names and distances become cues to look toward, while the map offers another way to understand the layout."], "ja": ["大きな駅では、出口の名前がわかっていても、どちらへ向かえばよいか迷うことがあります。地図を読むときも、地図の向き、自分の向き、周囲の空間を頭の中で合わせる必要があります。", "駅ナカまっぷは、出口がある方向に名前と距離を重ねます。進む先を探す手がかりを目の前の空間に置き、地図による全体の確認と行き来できるようにします。"]},
+      {"heading": "Working with uncertain position", "en": ["Position and orientation can drift, especially underground. The app lets users adjust their location using a known exit or ticket gate. When accuracy drops, broader direction indicators and approximate distances communicate that uncertainty."], "ja": ["地下などでは、現在地や向きの推定がずれることがあります。わかっている出口や改札を選んで位置を合わせ直せるようにし、精度が下がったときは方向の幅や概算の距離によって、不確かさも表示に反映します。"]},
+      {"heading": "AR and map, together", "en": ["The camera view helps with direction; the map helps with the arrangement of exits and floors. The design connects these two ways of reading space instead of asking one display to answer every wayfinding question."], "ja": ["カメラの画面は、向かう方向を捉えるために。地図は、出口の配置や階層を確かめるために。異なる見方を行き来できるようにすることで、駅での移動を支えます。"]}
+    ],
+    "gallery": {"file": "ekinaka-map-screen.jpg", "width": 1320, "height": 2868, "alt": "駅ナカまっぷ App Store presentation showing a JR west exit label in an AR interface", "caption": "App Store presentation · The AR background is an illustrative scene, as labeled in the image."},
+    "links": [["App Store", "https://apps.apple.com/app/id905156936"], ["Project website", "https://kurohune538.github.io/ekinaka-map/"]]
+  },
+  {
+    "slug": "stormy",
+    "category": "works",
+    "title": "Stormy",
+    "kicker": "2026 · AI agent interaction · Hackathon prototype",
+    "deck": "What if a first encounter came with a weather forecast?",
+    "summary": "A hackathon prototype in which AI agents meet on your behalf, take a virtual date and return a relationship forecast before a face reveal.",
+    "summary_ja": "AIエージェントが本人に代わって相手を探し、会話し、バーチャルなデートをする。その関係の予報を受け取ってから顔を知る、出会いの順序を組み替えるプロトタイプ。",
+    "card": "AI agents meet first and return a relationship forecast: a hackathon experiment in mediated encounters.",
+    "image": {
+      "file": "stormy.svg", "social_file": "stormy.png", "width": 1200, "height": 630,
+      "alt": "Stormy project graphic: two agent paths meet beneath a cloud and return a relationship weather forecast",
+      "caption": "Project graphic · Agent conversations, a virtual date and a relationship forecast"
+    },
+    "facts": [["Year", "2026"], ["Context", "Gemini AI Hackathon\nGoogle Japan"], ["Format", "Closed seed-pool prototype"], ["Tools", "Gemini · Google ADK\nReact · Python"]],
+    "sections": [
+      {"heading": "Before a face", "en": ["A profile photograph often frames an encounter before a conversation begins. Stormy experiments with a different order: agents interact first, and their exchange becomes something a person can consider before seeing a face.", "The project explores what changes when an AI represents us in an early social encounter—and how much of another person can be understood through that mediation."], "ja": ["プロフィール写真は、会話が始まる前から出会いの印象を形づくります。Stormyでは、まずエージェント同士が交流し、そのやり取りを受け取ってから相手の顔を見るという順序を試しています。", "最初の出会いをAIに託すと何が変わるのか。その仲介を通じて、相手のことをどこまで理解したと感じられるのかを探ります。"]},
+      {"heading": "A forecast, not a score", "en": ["The prototype's agents scout potential partners, hold a conversation and take a virtual date. The result is expressed as a relationship forecast with qualitative weather-like descriptions, leaving room for a person to interpret the encounter."], "ja": ["エージェントが相手を探し、会話し、バーチャルなデートへ進みます。その結果を数値の相性だけにまとめず、天気のような定性的な「関係の予報」として返します。やり取りをどう受け止めるかを、本人に開いておくための表現です。"]},
+      {"heading": "A hackathon experiment", "en": ["Developed for the Gemini AI Hackathon at Google Japan. The demonstration uses a closed set of seeded profiles to explore the interaction; it is a prototype rather than an open dating service."], "ja": ["Google JapanでのGemini AI Hackathonに向けて制作しました。あらかじめ用意したプロフィールの範囲でエージェント同士の交流を試す、クローズドなデモとして開発しています。"]}
+    ]
+  },
+  {
+    "slug": "maptom",
+    "category": "lab",
+    "title": "Maptom",
+    "kicker": "2026 · Web experiment · Language & maps",
+    "deck": "How does a Pokémon's name travel across the world?",
+    "summary": "An interactive world map that colors places by Pokémon names, connecting language, pronunciation and geography through a familiar character.",
+    "summary_ja": "ポケモンの名前が世界の言語でどう変わるかを、色分けした地図で眺めるWeb実験。名前を検索し、地球儀や平面地図を行き来しながら、ことばの違いやつながりを探す。",
+    "card": "Explore Pokémon names across languages through a world map, a globe and pronunciation playback.",
+    "image": {
+      "file": "maptom.png", "width": 1200, "height": 630,
+      "alt": "Maptom project visual: a globe colored by Pokémon names with multilingual search and pronunciation features",
+      "caption": "Maptom · Interactive language map · An independent fan-made experiment"
+    },
+    "facts": [["Year", "2026"], ["Format", "Interactive web experiment"], ["Interaction", "Search · Globe / flat map\nPronunciation playback"], ["Tools & data", "MapLibre GL JS · Wikidata\nNatural Earth · Web Speech"]],
+    "sections": [
+      {"heading": "One character, many names", "en": ["A familiar character offers a small, playful way to notice differences between languages. Maptom places those differences on a map: places using the same localized name share a color, making clusters and contrasts visible.", "The map is an invitation to compare words and listen to them, moving between an individual name and its wider geographical pattern."], "ja": ["よく知っているキャラクターを入り口に、言語による名前の違いを見つける実験です。同じ名前を使う地域を同じ色で示すことで、ことばのまとまりや違いが地図上に現れます。", "一つの名前を調べ、発音を聞き、地球儀を回して別の地域と比べる。身近な固有名詞から、言語と地理の関係へと視点を広げます。"]},
+      {"heading": "Search, rotate, listen", "en": ["Search multilingual Pokémon names, switch between a globe and a flat map, and play available pronunciations through the browser. Wikidata labels provide the multilingual names; MapLibre renders the geographical view."], "ja": ["多言語の名前で検索し、地球儀と平面地図を切り替え、ブラウザーによる発音再生を試せます。多言語の名称にはWikidataのラベルを使い、地図の表示にはMapLibreを用いています。"]},
+      {"heading": "Reading the map", "en": ["The country-to-language mapping is a simplified view. A single color cannot represent every language used in a country, and some labels rely on fallbacks. The experiment makes naming patterns explorable while keeping that simplification in view."], "ja": ["国と使用言語の対応は簡略化しており、一つの国にあるすべての言語を一色で表せるわけではありません。名称には代替のラベルを用いる場合もあります。その前提を踏まえながら、名前の分布を探索するための地図です。"]}
+    ],
+    "links": [["Explore Maptom", "https://kurohune538.github.io/maptom/"]]
+  }
+]

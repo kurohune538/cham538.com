@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#e9e6df"/>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#292e35">
+    <text x="72" y="78" font-size="15" letter-spacing="3">PUBLIC FRAGMENTS / A PERSONAL PORTRAIT</text>
+    <text x="68" y="225" font-size="72" letter-spacing="-3">Internet</text>
+    <text x="68" y="308" font-size="72" letter-spacing="-3">Résumé</text>
+    <text x="74" y="375" font-size="22">What does the internet say about you?</text>
+    <text x="74" y="565" font-size="14" letter-spacing="2">WEAKNESS / IDENTITY / PRINT</text>
+  </g>
+  <g fill="#d6d2cb" stroke="#9a9b98" stroke-width="1">
+    <rect x="574" y="130" width="129" height="57" rx="5" transform="rotate(-9 638 158)"/>
+    <rect x="559" y="278" width="126" height="70" rx="5" transform="rotate(7 622 313)"/>
+    <rect x="603" y="433" width="97" height="53" rx="5" transform="rotate(-7 651 459)"/>
+  </g>
+  <g stroke="#888c88" fill="none" stroke-width="2" stroke-dasharray="4 6"><path d="M708 158q45 0 80 42M687 309h100M703 457q40 0 80-40"/></g>
+  <g transform="translate(795 92) rotate(5 140 225)">
+    <rect x="12" y="12" width="286" height="442" fill="#c7c3b9"/>
+    <rect width="286" height="442" fill="#faf9f4"/>
+    <text x="27" y="51" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#333c3c" letter-spacing="2">RÉSUMÉ</text>
+    <g fill="none" stroke="#a2a8a3"><rect x="215" y="27" width="45" height="56"/><path d="M27 99h233M27 148h233M27 197h233M27 246h233M27 295h233M27 344h233M27 393h233M115 99v294"/></g>
+    <g stroke="#5f706d" stroke-width="6" opacity=".6"><path d="M31 124h52m47 0h90M31 173h63m36 0h113M31 222h39m60 0h77M31 271h58m47 0h98M31 320h49m47 0h119M31 369h58m47 0h83"/></g>
+  </g>
+</svg>

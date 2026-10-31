@@ -24,6 +24,8 @@ python3 -m http.server 8087 --directory dist
 | --- | --- |
 | `original-pages/` | 移行元の11ページとrobots・sitemapの原稿。既存ページの本文を編集する場所 |
 | `content/` | READ BETWEEN YOU・Cascade・Epitaph of the Earthの詳細ページとWorksの紹介カード |
+| `content/projects.json` | Ambient Divergence・hAIku・インターネット履歴書・ComicHolic・駅ナカまっぷ・Stormy・Maptomの日英本文、カテゴリ、画像、公開リンク |
+| `content/project-template.html` | 上記のWorks・Lab詳細ページに共通のHTML |
 | `content/cv-2026.json` | CVに基づく経歴・学歴・受賞・発表・展示歴と、既存サイトから保持した項目 |
 | `assets/` | 移行済みの画像・既存CSSなど354素材。ファイル名は参照元URLから生成したもの |
 | `static/` | 共通のナビゲーションJS・補正CSS・404・HTTPヘッダーと、作品の画像・CSS |
@@ -32,9 +34,12 @@ python3 -m http.server 8087 --directory dist
 | `scripts/build_mirror.py` | HTML・フォント・ナビゲーションを組み合わせて`dist/`を再生成 |
 | `scripts/validate_site.py` | HTML・CSSのローカル参照とサイトマップを検証 |
 | `scripts/cv_content.py` | Home・About・AppearancesのCV情報と共通ダウンロードリンクを生成 |
+| `scripts/project_content.py` | `projects.json`からWorks・Labのカード、詳細ページ、サイトマップを生成 |
 | `wrangler.jsonc` | 公開Workerと静的ファイル配信の設定 |
 
-READ BETWEEN YOUを更新するときは、`content/read-between-you.html`、`content/read-between-you-card.html`、`static/read-between-you.css`を編集してビルドします。Epitaph of the Earthは`content/epitaph-of-the-earth.html`、`content/epitaph-of-the-earth-card.html`、`static/epitaph-of-the-earth.css`と`static/epitaph-*.jpg`で管理します。Cascadeは`content/cascade.html`、`content/cascade-card.html`、`static/cascade.css`と`static/cascade-key-visual.jpg`で管理します。新しい作品を追加するときは、原稿・画像に加えてビルド処理とサイトマップへの登録も追加します。
+READ BETWEEN YOUを更新するときは、`content/read-between-you.html`、`content/read-between-you-card.html`、`static/read-between-you.css`を編集してビルドします。Epitaph of the Earthは`content/epitaph-of-the-earth.html`、`content/epitaph-of-the-earth-card.html`、`static/epitaph-of-the-earth.css`と`static/epitaph-*.jpg`で管理します。Cascadeは`content/cascade.html`、`content/cascade-card.html`、`static/cascade.css`と`static/cascade-key-visual.jpg`で管理します。
+
+追加作品は`content/projects.json`で管理します。`category`を`works`または`lab`に設定すると、一覧カード、詳細ページ、サイトマップをまとめて生成します。画像は`static/`へ置きます。hAIku・インターネット履歴書・Stormy・駅ナカまっぷの横長グラフィックは編集可能なSVGで、同名のPNGはSNS用の書き出しです。紹介グラフィックと実際の作品画像は各キャプションで区別しています。参加者の個人情報や非公開の調査資料は含めません。
 
 CV情報は`content/cv-2026.json`で編集します。ダウンロード用の原本PDFは`static/downloads/Shinnosuke-Komiya-CV-2026.pdf`、表示用CSSは`static/cv.css`です。ビルド時にHome・About・Appearancesへ反映し、PDFを`dist/downloads/`へコピーします。2026年10月8日更新のCVを基準とし、職歴はPDFの期間欄に合わせています。PDF本体は変更していません。
 

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><linearGradient id="sky" x2="1" y2="1"><stop stop-color="#e5e5f4"/><stop offset="1" stop-color="#b7c9e2"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#343856">
+    <text x="72" y="78" font-size="15" letter-spacing="3">AI AGENTS / RELATIONSHIP FORECASTS</text>
+    <text x="65" y="260" font-size="108" letter-spacing="-6">Stormy</text>
+    <text x="74" y="321" font-size="23">Let the agents meet first.</text>
+    <text x="74" y="565" font-size="14" letter-spacing="2">GEMINI AI HACKATHON / 2026</text>
+  </g>
+  <g fill="none" stroke="#6b77a3" stroke-width="2"><path d="M120 432Q405 550 690 365T1070 285" stroke-dasharray="5 8"/><path d="M425 417q150-100 290-17t292 78" stroke-dasharray="5 8"/></g>
+  <g fill="#f4f4fa" stroke="#7886af" stroke-width="2"><circle cx="163" cy="449" r="27"/><circle cx="440" cy="411" r="27"/></g>
+  <g fill="#7886af"><circle cx="155" cy="445" r="3"/><circle cx="171" cy="445" r="3"/><circle cx="432" cy="407" r="3"/><circle cx="448" cy="407" r="3"/></g>
+  <g transform="translate(737 188)">
+    <circle cx="195" cy="23" r="54" fill="#efe1b6"/>
+    <path d="M35 140a51 51 0 0 1-8-101 72 72 0 0 1 140-16 59 59 0 1 1 29 117Z" fill="#f8f8fc"/>
+    <path d="m63 165-15 34m60-34-15 34m60-34-15 34" stroke="#7f92b9" stroke-width="5" stroke-linecap="round"/>
+    <rect x="4" y="252" width="282" height="61" rx="30" fill="#f0f0f9"/>
+    <text x="145" y="289" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#46557b" letter-spacing="1">A RELATIONSHIP FORECAST</text>
+  </g>
+</svg>
