@@ -359,6 +359,17 @@ def main() -> None:
     apply_cv_content(ROOT)
     add_project_content(ROOT)
     add_portfolio_projects()
+    # Scope consistent thumbnail frames to the two portfolio listings.
+    for listing in ("works", "lab"):
+        listing_path = DIST / listing / "index.html"
+        listing_html = listing_path.read_text(encoding="utf-8")
+        marker = 'class="w-layout-grid grid"'
+        if listing_html.count(marker) != 1:
+            raise RuntimeError(f"Expected one {listing} portfolio grid")
+        listing_path.write_text(
+            listing_html.replace(marker, 'class="w-layout-grid grid portfolio-grid"', 1),
+            encoding="utf-8",
+        )
     write_download_config(assets, "curl-assets.conf")
     css_extras = localize_downloaded_css(assets)
     if css_extras:

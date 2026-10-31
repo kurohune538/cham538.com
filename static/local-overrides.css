@@ -16,6 +16,23 @@ body {
   cursor: pointer;
 }
 
+/* Use the same frame for every Works/Lab thumbnail, with the complete artwork
+   centered inside it. Detail-page photographs and videos retain their ratios. */
+.portfolio-grid > a {
+  min-width: 0;
+}
+
+.portfolio-grid > a > img {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9;
+  object-fit: contain !important;
+  object-position: center center !important;
+  margin: 0 !important;
+  background: #f6f6f5;
+}
+
 .menu-button:focus-visible,
 .navigation-item:focus-visible,
 a:focus-visible,
