@@ -38,6 +38,20 @@ def add_project_content(root: Path) -> None:
         image = project["image"]
         media.add(image["file"])
         media.add(image.get("social_file", image["file"]))
+        hero_media = (
+            f'<img src="/assets/{esc(image["file"])}" width="{image["width"]}" '
+            f'height="{image["height"]}" alt="{esc(image["alt"])}" fetchpriority="high"/>'
+        )
+        if "video" in project:
+            video = project["video"]
+            media.add(video["file"])
+            hero_media = (
+                f'<video controls playsinline preload="metadata" poster="/assets/{esc(image["file"])}" '
+                f'width="{image["width"]}" height="{image["height"]}" '
+                f'aria-label="{esc(video["label"])}">'
+                f'<source src="/assets/{esc(video["file"])}" type="video/mp4"/>'
+                f'<a href="/assets/{esc(video["file"])}">Watch the performance video</a></video>'
+            )
         cards[category].append(
             f'<a href="{route}" class="w-inline-block portfolio-card">'
             f'<div class="text-block-21">{esc(project["kicker"])}</div>'
@@ -69,12 +83,25 @@ def add_project_content(root: Path) -> None:
                         for label, url in project.get("links", []))
         gallery = ""
         if "gallery" in project:
-            photo = project["gallery"]
-            media.add(photo["file"])
-            gallery = (f'<figure class="portfolio-gallery"><img src="/assets/{esc(photo["file"])}" '
-                       f'width="{photo["width"]}" height="{photo["height"]}" '
-                       f'alt="{esc(photo["alt"])}" loading="lazy"/>'
-                       f'<figcaption>{esc(photo["caption"])}</figcaption></figure>')
+            photos = project["gallery"]
+            is_collection = isinstance(photos, list)
+            if not is_collection:
+                photos = [photos]
+            figures = []
+            for photo in photos:
+                media.add(photo["file"])
+                figures.append(
+                    f'<figure class="portfolio-gallery"><img src="/assets/{esc(photo["file"])}" '
+                    f'width="{photo["width"]}" height="{photo["height"]}" '
+                    f'alt="{esc(photo["alt"])}" loading="lazy"/>'
+                    f'<figcaption>{esc(photo["caption"])}</figcaption></figure>'
+                )
+            gallery = "".join(figures)
+            if is_collection:
+                gallery_heading = esc(project.get("gallery_heading", "Exhibition photographs"))
+                gallery = (f'<section class="portfolio-documentation" aria-label="{gallery_heading}">'
+                           f'<h2>{gallery_heading}</h2>'
+                           f'<div class="portfolio-gallery-grid">{gallery}</div></section>')
         tokens = {
             "TITLE": esc(project["title"]), "DESCRIPTION": esc(project["summary"]),
             "ROUTE": route, "KICKER": esc(project["kicker"]),
@@ -83,6 +110,7 @@ def add_project_content(root: Path) -> None:
             "IMAGE_WIDTH": str(image["width"]), "IMAGE_HEIGHT": str(image["height"]),
             "SOCIAL_IMAGE": esc(image.get("social_file", image["file"])),
             "CAPTION": esc(image["caption"]), "FACTS": facts,
+            "HERO_MEDIA": hero_media,
             "SECTIONS": "\n".join(sections), "LINKS": links, "GALLERY": gallery,
             "CATEGORY": "Works" if category == "works" else "Lab",
             "CATEGORY_PATH": category, "SITE_NAVIGATION": navigation,
