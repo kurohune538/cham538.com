@@ -45,7 +45,7 @@ StormyのUI画像は、`google-hackathon2026`のコミット`ed7fc7333cf1b6b270e
 
 WorksのRe:Earthカードの画像`static/reearth-visualizer-ui.jpg`は、2026年10月31日に[reearth.io](https://reearth.io/about)の概要ページから取得したVisualizerの画面です。権利はEukaryaに帰属します。
 
-ComicHolicのランキング・検索、Maptomの地球儀・平面地図のUI画像は、2026年10月31日にそれぞれの公開サイトを操作して取得した実画面です。書影やポケモンの画像・名称の権利は各権利者に帰属します。
+ComicHolicのランキング・検索・マンガ詳細・マイページ、Maptomの地球儀・平面地図のUI画像は、2026年10月31日にそれぞれの公開サイトを操作して取得した実画面です。ComicHolicのマイページでは、公開プロフィールにも表示されるプロフィール・本棚・マイリストの範囲を掲載しています。書影やポケモンの画像・名称の権利は各権利者に帰属します。
 
 旧一覧にあるGyoretsu Ya、Interactive DJ Pillars、Live Ya、Mangaka、Komenoma、Townworkのカードは、各作品の紹介ページにリンクします。本文は`content/projects.json`で管理し、`include_card: false`を指定して既存カードとの重複を防ぎます。画像のファイル名は`static/`、次いで`assets/`から解決できるため、制作当時の移行済み素材をそのまま参照できます。確認済みの資料へのリンクを掲載し、利用できなくなったショップや未確認のデモURLは載せません。
 
