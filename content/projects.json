@@ -31,36 +31,52 @@
     "summary_ja": "Web上に漂うAIの俳句に、鑑賞者が一言を加える。その俳句から生成された情景に演者がリアルタイムで応答し、演者の一人称視点が観客へと共有される参加型パフォーマンス。",
     "card": "Audience-edited haiku becomes a virtual scene, a live performance and a shared first-person experience.",
     "image": {
-      "file": "haiku.svg", "social_file": "haiku.png", "width": 1200, "height": 630,
-      "alt": "hAIku concept diagram: a revised poem flows into a virtual scene, a performer and the audience's shared view",
-      "caption": "Interaction diagram · A poem → a generated scene → live performance → a shared first-person view"
+      "file": "haiku-performance.jpg",
+      "width": 1280,
+      "height": 720,
+      "alt": "hAIku performance at UNIS: a performer on stage with an AI-generated haiku and virtual scene projected behind them",
+      "caption": "hAIku · Performance video (2 min 43 sec) · United Nations International School, New York · 2023 · Poster: still from the recording"
     },
     "facts": [["Year", "2023"], ["Format", "Participatory live performance"], ["Medium", "AI-generated haiku\nWeb interface · Virtual scenes · Live embodiment"], ["Presentation", "Invited performance\nUnited Nations International School, New York"]],
     "sections": [
       {"heading": "Between a word and a world", "en": ["A haiku leaves space for a reader to imagine a scene. hAIku makes that act of interpretation travel between an AI, an audience member and a performing body. A small intervention in language changes the environment in which someone else must act.", "Rather than ending with a generated image, the poem continues into live performance. Each participant encounters a scene shaped by another participant's interpretation."], "ja": ["俳句は、わずかな言葉から読み手の中に風景を立ち上げます。hAIkuでは、その解釈をAI、鑑賞者、演者の身体のあいだで受け渡します。言葉への小さな介入が、別の誰かが身を置く世界を変えていきます。", "生成された情景は完成した出力として終わらず、演者の即興的な応答へと続きます。言葉を変える人、世界を演じる人、その視点を受け取る人が、異なる仕方で一つの体験をつくります。"]},
       {"heading": "How the performance unfolds", "steps": [["Choose a floating poem", "Tap an AI-generated haiku drifting through the web interface.", "WebのUIに漂う、AIが考えた俳句をタップする。"], ["Change a word", "Add a short revision and upload the poem. A virtual scene is generated in response.", "俳句に一言の改変を加えてアップロードすると、その俳句に合わせたバーチャルな情景が生成される。"], ["Enter the scene together", "A performer responds to the generated environment in real time. Their first-person view is shared with the audience.", "演者が生成された情景に合わせてリアルタイムに演技をし、その一人称視点を観客も共有する。"]]},
       {"heading": "A shared viewpoint", "en": ["The audience can both alter the world and witness how a performer inhabits it. The shared first-person view connects a brief act on a personal screen with a bodily response unfolding in real time.", "Presented as an invited performance at the United Nations International School in New York in 2023."], "ja": ["鑑賞者は、世界を変える立場と、その世界を生きる演者の視点を受け取る立場を行き来します。個人の画面上での短い操作が、演者の身体を通じて観客全体の体験につながります。", "2023年、ニューヨークのUnited Nations International School（UNIS）で招待パフォーマンスを実施しました。"]}
+    ],
+    "video": {
+      "file": "haiku-performance.mp4",
+      "label": "hAIku performance documentation at UNIS, New York, 2023"
+    },
+    "gallery_heading": "Interaction diagram",
+    "gallery": [
+      {"file": "haiku.svg", "width": 1200, "height": 630, "alt": "hAIku concept diagram: a revised poem flows into a virtual scene, a performer and the audience's shared view", "caption": "Interaction diagram · A poem → a generated scene → live performance → a shared first-person view"}
     ]
   },
   {
     "slug": "internet-resume",
     "category": "works",
     "title": "インターネット履歴書",
-    "kicker": "2020 · Participatory art · 弱みを握る寿司屋",
+    "kicker": "2020 · Participatory art · Exhibition: 弱みを握る寿司屋",
     "deck": "What does the internet say about you?",
     "summary": "Internet Résumé gathers fragments of publicly shared social media information into a printed résumé, making an online portrait tangible and available to take home.",
-    "summary_ja": "公開されたSNS上の情報を拾い集め、履歴書の形式にまとめて印刷し、本人に持ち帰ってもらう作品。アートコレクティブ「弱みを握る寿司屋」での活動として制作。",
+    "summary_ja": "公開されたSNS上の情報を拾い集め、履歴書の形式にまとめて印刷し、本人に持ち帰ってもらう作品。Rika Ishitsukaと共同制作し、展示会「弱みを握る寿司屋」で発表。",
     "card": "Public social media fragments become a printed résumé: a portrait assembled from what others can see.",
     "image": {
-      "file": "internet-resume.svg", "social_file": "internet-resume.png", "width": 1200, "height": 630,
-      "alt": "Internet Résumé project graphic: scattered public profile fragments gathered into an abstract printed résumé",
-      "caption": "Project graphic · Public profile fragments assembled into a résumé; no participant information is shown"
+      "file": "internet-resume-installation.jpg",
+      "width": 1616,
+      "height": 1080,
+      "alt": "Internet Résumé exhibition installation: a tablet with the colorful profile interface beside a printer",
+      "caption": "Internet Résumé · Exhibition installation with the participant interface and printer · 2020"
     },
-    "facts": [["Year", "2020"], ["English title", "Internet Résumé"], ["Format", "Participatory artwork\nPrinted résumé"], ["Context", "Art collective\n弱みを握る寿司屋"]],
+    "facts": [["Year", "2020"], ["English title", "Internet Résumé"], ["Artists", "Shinnosuke Komiya / Yamico\nRika Ishitsuka"], ["Exhibition", "弱みを握る寿司屋"]],
     "sections": [
       {"heading": "A portrait made by others", "en": ["We distribute pieces of ourselves across social media: a name, a place, a career, an interest. Each fragment has its own context. When they are collected and placed in the familiar structure of a résumé, they begin to read as a coherent account of a person.", "The work brings that assembled portrait back to its subject. What feels accurate? What is missing? Which connections become visible only when separate fragments are read together?"], "ja": ["名前、ゆかりのある場所、経歴、関心。SNSでは、それぞれ異なる文脈の中で自分の断片を公開しています。それらを集め、見慣れた履歴書の枠に配置すると、一人の人物を説明するまとまった情報のように見えてきます。", "そのように組み立てられた人物像を、本人に返します。どこまで自分らしく、何が抜け落ちているのか。別々に公開していた情報を並べることで、初めて見えてくるつながりは何かを問いかけます。"]},
       {"heading": "From a profile to a page", "en": ["Public profile information is collected, arranged in a résumé format and printed for the participant to take away. The paper gives a fixed shape to information that is usually dispersed across screens and changing timelines."], "ja": ["公開されたプロフィール情報をまとめ、履歴書の形式で印刷し、本人に持ち帰ってもらいます。画面やタイムラインに分散していた情報が、一枚の紙に固定されます。情報が公開されていることと、それらが一つの人物像として読まれることのあいだにある距離を、手に取れる形にします。"]},
-      {"heading": "弱みを握る寿司屋", "en": ["Created in the context of the art collective 弱みを握る寿司屋. The familiar social form of a résumé becomes a setting for an encounter with how one is seen through publicly available information."], "ja": ["アートコレクティブ「弱みを握る寿司屋」で制作した作品です。履歴書という日常的な書式を通じて、自分が公開した情報から、他者にどのように見られているかと向き合う場をつくります。"]}
+      {"heading": "弱みを握る寿司屋", "en": ["Created with Rika Ishitsuka and presented at the exhibition 弱みを握る寿司屋. The familiar social form of a résumé becomes a setting for an encounter with how one is seen through publicly available information."], "ja": ["Rika Ishitsukaとの共同制作。展示会「弱みを握る寿司屋」で発表しました。履歴書という日常的な書式を通じて、自分が公開した情報から、他者にどのように見られているかと向き合う場をつくります。"]}
+    ],
+    "gallery": [
+      {"file": "internet-resume-participation-1.jpg", "width": 1616, "height": 1080, "alt": "A visitor entering information on the Internet Résumé tablet interface, with the printer beside it", "caption": "A visitor using the Internet Résumé interface · 展示での体験風景"},
+      {"file": "internet-resume-participation-2.jpg", "width": 1616, "height": 1080, "alt": "A second visitor interacting with the colorful Internet Résumé interface at the exhibition", "caption": "The web interface and printing station in use · 操作画面とプリンターを備えた展示台"}
     ]
   },
   {
